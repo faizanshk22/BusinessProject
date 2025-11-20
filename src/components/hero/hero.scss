@@ -1,0 +1,162 @@
+@import "../../app.scss";
+
+.hero {
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  background: linear-gradient(180deg, #80751d, #111132);
+  position: relative;
+.landingImage {
+  position: absolute;  // make it sit behind the text
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;   // ensure it doesn’t overflow hero
+  z-index: 0;         // behind text
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // cover full screen, maintain aspect ratio
+  }
+}
+  .wrapper {
+    max-width: 1336px;
+    height: 60%;
+    margin-top: 100px;
+    margin-left: 150px;
+    position: relative; // important
+    z-index: 10; 
+    @include mobile {
+      margin-top: 50px;
+       margin-left: 2px;
+      } 
+
+    .textContainer {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+
+      @include mobile {
+        height: 50%;
+        width: 100%;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 20px;
+        // color: rgb(68, 35, 101);
+        color: white;
+        letter-spacing: 2px;
+         @include mobile {
+          font-size: 15px;
+          color:black
+                 }
+      }
+
+      h3 {
+        font-size: 50px;
+        color: aquamarine;
+        @include mobile {
+          font-size: 20px;
+          color: blue;
+          width: 80%;
+        }
+      }
+      .p1{
+        font-weight: bold;
+         color: white;
+         width: 20%;
+
+         @include mobile {
+          color: black;
+          width: 80%;
+        }
+      }
+      .p2{
+        margin-top: -10px;
+        font-weight: bold;
+          color: rgb(230, 159, 137);
+        font-size: 30px;
+         @include mobile {
+          font-size: 15px;
+          color: rgb(230, 159, 137);
+          width: 80%;
+        }
+      }
+
+      .buttons {
+        display: flex; /* Ensure buttons are properly aligned */
+        gap: 20px; /* Add space between buttons if needed */
+
+        a {
+          text-decoration: none; /* Remove default underline */
+        }
+
+        button {
+          padding: 20px;
+          border: 1px solid white;
+          border-radius: 10px;
+          background-color: transparent;
+          color: white;
+          cursor: pointer;
+          font-weight: 300;
+          z-index: 10; /* Ensure button is on top of other elements */
+          position: relative; /* Ensure proper stacking context */
+          @include mobile {
+            padding: 10px;
+          }
+          &:hover {
+            background-color: white; /* Change background color on hover */
+            color: #000; /* Change text color on hover */
+          }
+        }
+      }
+
+      img {
+        width: 50px;
+      }
+    }
+  }
+
+  .imageContainer {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 20px;
+
+    @include mobile {
+      right: 0;
+      height: 80%;
+      width: 100%;
+      top: 230px;
+      bottom: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .slidingTexContainer {
+    position: absolute;
+    font-size: 40vh;
+    bottom: -10px;
+    white-space: nowrap;
+    color: dark;
+    opacity: 0.5;
+    width: 50%;
+    font-weight: bold;
+      @include mobile {
+     font-size: 20vh;
+     bottom: 200px;
+    }
+  }
+}

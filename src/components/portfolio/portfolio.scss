@@ -1,0 +1,141 @@
+@import "../../app.scss";
+
+.portfolio {
+  position: relative;
+  background: linear-gradient(180deg, #111132, #111132);
+
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 80px; /* Increased padding to push the content down */
+    text-align: center;
+    color: #FF7F50;
+    font-size: 36px;
+
+    @include mobile {
+      padding-top: calc(100vh - 120px); /* Adjust padding for mobile */
+      font-size: 24px;
+    }
+
+    .progressBar {
+      height: 10px;
+      background-color: white;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .wrapper {
+      max-width: 1336px;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+
+      @include mobile {
+        flex-direction: column;
+        gap: 20px; /* Adjusted gap for mobile */
+      }
+
+      .imageContainer {
+        flex: 1;
+        height: 40%;
+
+        @include mobile {
+          width: 100%;
+          max-height: 300px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+
+          @include mobile {
+            object-fit: contain;
+          }
+        }
+      }
+
+      .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @include mobile {
+          transform: none !important;
+          padding: 10px;
+          align-items: center;
+          text-align: center;
+        }
+
+        h2 {
+          font-size: 72px;
+
+          @include mobile {
+            font-size: 36px;
+          }
+        }
+
+        p {
+          color: gray;
+          font-size: 20px;
+
+          @include mobile {
+            font-size: 16px;
+          }
+        }
+
+        button {
+          position: relative;
+          z-index: 1;
+          background-color: wheat;
+          border: none;
+          border-radius: 10px;
+          padding: 10px;
+          width: 200px;
+          font-weight: bold;
+          margin-top: -20px;
+          cursor: pointer;
+
+          @include mobile {
+            width: 100px; /* Responsive button width */
+            padding: 6px;
+          }
+          .mini-circle {
+            width: 10px;      // Adjust the size as needed
+            height: 10px;     // Adjust the size as needed
+            background-color: red; // Red color
+            border-radius: 50%; // Makes it a circle
+            padding-left: 10px;
+            margin-right: 6px;
+            margin-top: 4px;
+          }
+          &.disabled{
+            background-color: gray;
+          color: darkgray;
+          cursor: not-allowed;
+          .mini-circle{
+           background-color: darkgray;   
+          }
+          }
+        }
+
+        button:hover {
+          background-color: #B0B0B0; /* Gray color */
+        }
+      }
+    }
+  }
+}
