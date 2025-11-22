@@ -9,7 +9,7 @@ function Navbar() {
       {/* <Sidebar/> */}
       <div className="wrapper">
         <motion.span initial={{opacity:0, scale:0.5}} animate={{opacity:1, scale:1}}
-        transition={{duration:0.5}}><a href='/'><img src='ONSETSLOGO.png' alt='ONSETS LOGo' /></a></motion.span>
+        transition={{duration:0.5}}><a href='/'><img src='ONSETSLOGO.png' alt='ONSETS LOGO' /></a></motion.span>
         <div className="social">
             <a href='https://wwww.facebook.com/faizansh1may/' target="_blank" rel="noopener noreferrer"><img src="/facebook.png" alt="fb" /></a>
             <a href='https://www.instagram.com/faizan__sheikh__/' target="_blank" rel="noopener noreferrer"><img src="/instagram.png" alt="ig" /></a>

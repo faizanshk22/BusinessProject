@@ -9,11 +9,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, #80751d, #111132);
+    background: rgb(103, 98, 98);
+    // linear-gradient(180deg, #80751d, #111132);
     z-index: 9999;
   }
   .load{
     animation: spin 1s linear infinite;
+    img{
+      width: 250px;
+      height: 250px;
+    }
     @include mobile{
         img{
             width: 250px;

@@ -1,6 +1,6 @@
 import React from 'react';
 import './preloader.scss';
-import Loader from '/newLogo.png';
+import Loader from '/ONSETSLOGO.png';
 
 function Preloader() {
   return (
