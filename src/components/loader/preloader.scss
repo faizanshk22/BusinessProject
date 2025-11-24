@@ -14,7 +14,7 @@
     z-index: 9999;
   }
   .load{
-    animation: spin 1s linear infinite;
+    animation: spin 1.5s ease-in-out infinite;
     img{
       width: 250px;
       height: 250px;
@@ -22,7 +22,7 @@
     @include mobile{
         img{
             width: 250px;
-            height: 25px px;
+            height: 250px;
         }
     }
   }
@@ -36,8 +36,19 @@
 //     animation: spin 1s linear infinite;
 //   }
   
+  // @keyframes spin {
+  //   to {
+  //     transform: rotate(360deg);
+  //   }
+  // }
   @keyframes spin {
-    to {
-      transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
   }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

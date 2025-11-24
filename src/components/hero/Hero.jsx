@@ -67,8 +67,9 @@ function Hero() {
             </a> */}
             {/* <motion.button variants={textVariants}>Contact Me</motion.button> */}
           </motion.div>
-          {/* <motion.img variants={textVariants} animate='scrollButton' src="/scroll.png" alt="" /> */}
+          <motion.img variants={textVariants} animate='scrollButton' src="/scroll.png" alt="" />
         </motion.div>
+        <div className='btn'>GET STARTED</div>
       </div>
       <motion.div className="slidingTexContainer" variants={sliderVariants} initial="initial" animate="animate">
       BEST IT SOLUTIONS

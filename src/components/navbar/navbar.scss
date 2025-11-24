@@ -3,7 +3,12 @@
 .navbar{
     height: 80px;
     // background: #80751d;
-    background: rgb(103, 98, 98);
+    background: transparent !important;
+     position: absolute;                   // ← Makes it sit on top of the image
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
     .wrapper{
         max-width: 1336px;
         margin: auto;

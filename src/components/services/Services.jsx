@@ -33,7 +33,7 @@ function Services() {
 
   return (
     <motion.div className='services' variants={variants} initial="initial" ref={ref} animate={"animate"}>
-      <motion.div className='textContainer' variants={variants}>
+      {/* <motion.div className='textContainer' variants={variants}>
         <p>I assist you to grow your business <br /> and move forward</p>    
         <hr />
       </motion.div> 
@@ -82,7 +82,7 @@ function Services() {
           </p>
           <button onClick={scrollToContact}><strong>Let's Connect</strong></button>
         </motion.div>
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   );
 }

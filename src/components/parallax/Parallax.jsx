@@ -17,15 +17,15 @@ function Parallax({ type }) {
     <div
       className='parallax'
       ref={ref}
-      style={{
-        background: type === 'services'
-          ? 'background: linear-gradient(180deg, #111132, #111132)'
-          : 'linear-gradient(180deg, #111132, #505064)',
-      }}
+      // style={{
+      //   background: type === 'services'
+      //     ? 'background: linear-gradient(180deg, #111132, #111132)'
+      //     : 'linear-gradient(180deg, #111132, #505064)',
+      // }}
     >
       <motion.h1 style={{ y: yText }}>{type === 'services' ? (
           <>
-            <Stats />
+            {/* <Stats /> */}
             <h1 className="work-text">What I work?</h1>
           </>
         )  : 'My Recent Work?'}</motion.h1>

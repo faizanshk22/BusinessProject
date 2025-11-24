@@ -9,7 +9,8 @@ html{
     font-family: "DM sans";
 }
 body{
-    background-color: #0c0c1d;
+    // background-color: #0c0c1d;
+    background: #000;
     color: lightgray;
 }
 a{
@@ -35,6 +36,9 @@ section{
     z-index: 1001;
     img {
       width: 60px;
+       &:hover {
+    transform: translateY(-3px);
+  }
     }
   }
   
