@@ -58,7 +58,7 @@ function Contact() {
           <p>hr-devcoders-inc@hotmail.com</p>
         </div>
         <div className="item" variants={variants}>
-        <img width="30" height="30" src="location.png" alt="Location"/>
+        <img width="30" height="30" src="location.png" alt="Location" className='item2'/>
           <span>Dubai Tower, Shalimar Link Road, Lahore, 54840</span>
         </div>
         <div className="item" variants={variants}>

@@ -29,11 +29,19 @@
           .item {
             display: flex;
             align-items: center; /* Centers items vertically */
-            gap: 20px; /* Optional: Adds space between image and text */
+            gap: 10px; /* Optional: Adds space between image and text */
           }
-          
+          .item2{
+            @include mobile{
+              
+              margin-top: -20px;
+            }
+          }
           .item img {
             display: block; /* Ensures no extra space below the image */
+            @include mobile{
+              margin-left: 10px;
+            }
           }
           
 

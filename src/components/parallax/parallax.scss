@@ -1,34 +1,89 @@
-@import "../../app.scss";
+// @import "../../app.scss";
 
-.parallax{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background: #fff;
+// .parallax{
+//     width: 100%;
+//     height: 100%;
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     overflow: hidden;
+//     background: #fff;
 
 
-    h1{
-        font-size: 100px;
+//     h1{
+//         font-size: 100px;
 
-        @include mobile{
-            font-size: 72px;
-            text-align: center;
-          }
-    }
-    .work-text {
-        font-size: 100px;
-        margin-top: 50px;
-        text-align: center;
+//         @include mobile{
+//             font-size: 72px;
+//             text-align: center;
+//           }
+//     }
+//     .work-text {
+//         font-size: 100px;
+//         margin-top: 50px;
+//         text-align: center;
     
-        @include mobile {
-          font-size: 40px;
-          margin-top: 15px;
-        }
-      }
+//         @include mobile {
+//           font-size: 40px;
+//           margin-top: 15px;
+//         }
+//       }
+// .rocketContainer {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   .rocketBorder{
+//   border-radius: 50%;
+//   border: 1px solid black;
+
+// }
+// }
+
+// /* Rectangle border */
+// .rectangleBorder {
+//   margin-top: -80%;
+//   margin-left: -120%;
+//   width: 350px;
+//   height: 250px;
+//   border: 1px solid #000;
+//   border-radius: 0px;
+//   position: relative;
+//   overflow: visible;     // IMPORTANT so rocket can go out
+//   display: flex;
+//   justify-content: center;
+//   align-items: flex-end; // rocket at bottom
+//   @include mobile{
+//     margin-left: 0;
+//     margin-top: -100%;
+//   }
+// }
+
+// /* White card box around rocket */
+// // .rocketCard {
+// //   width: auto;
+// //   padding: 40px 80px;
+// //   background: #fff;
+// //   border-radius: 20px;
+// //   border: 1px solid #ececec;
+// //   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.08);
+
+// //   display: flex;
+// //   flex-direction: column;
+// //   align-items: center;
+// // }
+
+// /* Rocket GIF */
+// .rocketImage {
+//   width: 300px;
+//   height: auto;
+//   @include mobile{
+//     width: 200px;
+//     height: auto;
+//   }
+// }
+
 
     // .mountains{
     //     background-image: url("/mountains.png");
@@ -48,13 +103,201 @@
     //     position: absolute;
     //     z-index: 2;
     // }
-    .stars{
-        background-image: url("/blackDots.png");
-        background-size: cover;
-        background-position: bottom;
+    // .stars{
+    //     background-image: url("/blackDots.png");
+    //     background-size: cover;
+    //     background-position: bottom;
+    //     width: 100%;
+    //     height: 100%;
+    //     position: absolute;
+    //     z-index: 1;
+    // }
+
+    @import "../../app.scss";
+.parallax{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    // align-items: center;  <-- REMOVE or change to flex-start
+    align-items: flex-start; // Start content from the top
+    justify-content: center;
+    overflow: hidden;
+    background: #fff;
+    padding-top: 50px; // Add some space at the top
+
+    h1{
+        font-size: 100px;
+        @include mobile{
+            font-size: 72px;
+            text-align: center;
+        }
+    }
+
+    /* ... other h1/work-text styles ... */
+
+    /* NEW FLEX LAYOUT FOR MD/LG */
+    .rocketWrapper {
+        display: flex;
+        // align-items: center; <-- REMOVE
+        // justify-content: center; <-- REMOVE
+        // gap: 80px; <-- REMOVE
         width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: 1;
+        max-width: 1200px; // Limit max width for better centering
+        flex-direction: column; // Stack the border and the remaining text vertically
+        align-items: flex-start; // Align items to the left (or center if you want everything centered)
+        padding: 0 50px; // Add horizontal padding
+
+        @include mobile {
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+            align-items: center; // Center content on mobile
+        }
+    }
+
+    /* Rectangle border → MADE BIGGER & BETTER */
+    .rectangleBorder {
+        width: 90%; // Use relative width for responsiveness
+        max-width: 1000px; // Set a max width for the border box
+        height: 200px;     // increased height
+        border: 1px solid rgb(200, 184, 184);
+        // margin-top: -20%; <-- REMOVE/Adjust
+        margin-top: 200px; // Space it down from the top of the wrapper if needed, or 0
+        margin-left: 50px;
+        border-radius: 0px;
+        position: relative;
+        overflow: visible;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        @include mobile {
+            width: 100%;
+            height: 500px;
+            margin-top: 0; // Adjust for mobile
+            margin-left: 0;
+        }
+    }
+
+    /* New style for the text below the border */
+.remainingText {
+        // Set the container to be a flex row to place H1 and UL side-by-side
+        display: flex; 
+        align-items: flex-start; // Align items to the top of the container
+        
+        // Adjust spacing below the border. Reduced margin to bring it closer to the border.
+        margin-top: 20px; 
+        
+        // This margin should control the overall horizontal position relative to the border box. 
+        // We'll center the whole .rocketWrapper instead, so let's adjust this margin.
+        // I will assume you want it to align with the left edge of the border box above.
+        margin-left: 100px; 
+        // Add a small gap between the H1 and the UL
+        gap: 50px; 
+
+        @include mobile {
+            flex-direction: column; // Stack them vertically on mobile
+            align-items: center; // Center content on mobile
+            margin-top: -20px;
+            margin-left: 0; // Remove fixed margin on mobile
+            gap: 0px;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: rgb(200, 184, 184); 
+            // The H1 should not have a fixed width, but should be allowed to wrap.
+            // Adjust margins for H1 to position it correctly on desktop
+            margin-top: 0;
+            margin-left: 0;
+
+            @include mobile {
+                margin-top: 0;
+                margin-left: 0;
+                font-size: 28px;
+                text-align: center;
+            }
+        }
+    }
+
+    ul {
+        list-style-type: disc;
+        // Reset margins/padding that conflict with the flex layout
+        margin: 0; 
+        padding-left: 0; 
+        
+        // Vertically align the list with the H1 text (optional: you may adjust this)
+        margin-top: 10px; 
+        
+        @include mobile {
+            margin-top: 0;
+            padding-left: 20px; // Keep some padding for list bullets on mobile
+        }
+    }
+
+    li {
+        font-size: 30px; 
+        color: black; 
+        font-weight: 500;
+        margin-bottom: 10px; 
+        
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+    /* Rocket GIF */
+    .rocketImage {
+        width: 260px;
+
+        @include mobile {
+            width: 200px;
+        }
+    }
+.innerContent {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+    /* RIGHT SIDE TEXT */
+    .rocketText {
+      overflow-y: auto;
+        max-width: 450px;
+        margin-bottom: 20px;
+        @include mobile {
+            text-align: center;
+            max-width: 90%;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: black;
+            @include mobile {
+                font-size: 32px;
+            }
+        }
+
+        p {
+            color: gray;
+            font-size: 20px;
+            margin-top: 10px;
+
+            @include mobile {
+                font-size: 16px;
+            }
+        }
+        span{
+        color: black;
+        font-weight: bold;
+        }
     }
 }
