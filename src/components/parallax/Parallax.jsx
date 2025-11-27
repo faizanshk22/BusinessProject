@@ -53,48 +53,43 @@ function Parallax({ type }) {
   // Rocket moves upward
   const rocketY = useTransform(scrollYProgress, [0, 1], ["0%", "-220%"]);
 
-  return (
-    <div className="parallax" ref={ref}>
-      {type === "services" ? (
-        <div className="rocketWrapper">
+  return type === "services" ? (
+  <div className="parallax" ref={ref}>
+    <div className="rocketWrapper">
 
-          {/* Left side rectangle with rocket */}
-       <div className="rectangleBorder">
-  <div className="innerContent">
-      {/* ROCKET INSIDE BORDER (but allowed to fly outside) */}
-    <motion.img
-      src="https://cdn.prod.website-files.com/66e3fc0ead389c7ea9c29d6e/66e3fc0ead389c7ea9c29f1c_NewArtboard-Animation12-ezgif.com-video-to-gif-converter.gif"
-      className="rocketImage"
-      style={{ y: rocketY }}
-    />
+      <div className="rectangleBorder">
+        <div className="innerContent">
+          <motion.img
+            src="https://cdn.prod.website-files.com/66e3fc0ead389c7ea9c29d6e/66e3fc0ead389c7ea9c29f1c_NewArtboard-Animation12-ezgif.com-video-to-gif-converter.gif"
+            className="rocketImage"
+            style={{ y: rocketY }}
+          />
 
-    {/* TEXT INSIDE BORDER */}
-    <div className="rocketText">
-      <h2>Unleash Your Potential Before Opportunity Passes You By.</h2>
-      <p>
-       <span>Most startups fail </span> within year one — the smartest ones prepare differently.
-      </p>
+          <div className="rocketText">
+            <h2>Unleash Your Potential Before Opportunity Passes You By.</h2>
+            <p>
+              <span>Most startups fail</span> within year one — the smartest ones prepare differently.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="remainingText">
+        <h1>Founder will be <br /> battling with?</h1>
+        <ul>
+          <li>Lack of AI Expertise</li>
+          <li>Complex AI Integration</li>
+          <li>Data Challenges</li>
+          <li>Scope Creep</li>
+          <li>Poor UX Planning</li>
+          <li>No Growth Strategy</li>
+        </ul>
+      </div>
+
     </div>
   </div>
-</div>   
-<div className="remainingText">
-<h1>Founder will be <br/> battling with?</h1>
-<ul>
-        <li>Lack of AI Expertise</li>
-        <li>Complex AI Integration</li>
-        <li>Data Challenges</li>
-        <li>Scope Creep</li>
-        <li>Poor UX Planning</li>
-        <li>No Growth Strategy</li>
-    </ul>
-</div>     
-</div>
+) : null;
 
-      ) : (
-        <motion.h1 style={{ y: rocketY }}>My Recent Work?</motion.h1>
-      )}
-    </div>
-  );
 }
 
 export default Parallax;

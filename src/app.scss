@@ -1,6 +1,6 @@
 html{
     scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 *{
     padding: 0;
@@ -20,6 +20,12 @@ a{
 section{
     height: 100vh;
     scroll-snap-align: center;
+}
+#Services,
+#Parallax,
+#Portfolio
+{
+  height: auto !important;
 }
 .footer{
    height: 20px;

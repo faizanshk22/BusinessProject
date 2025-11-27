@@ -11,6 +11,7 @@ import Cursor from './components/cursor/Cursor';
 import About from './pages/About/About';
 import whatappLogo from './assets/wlogo.png';
 import Preloader from './components/loader/Preloader';
+import PackageModel from './components/PackageModel/PackageModel';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -38,8 +39,9 @@ function App() {
             </section>
             <section id="Services"><Parallax type="services" /></section>
             <section id="Work-Service"><Services /></section>
-            <section id="Portfolio"><Parallax type="portfolio" /></section>
-            <Portfolio />
+            {/* <section id="Portfolio"><Parallax type="portfolio" /></section> */}
+            <PackageModel/>
+            {/* <Portfolio /> */}
             <section id="Contact">
               <Contact />
             </section>
