@@ -12,6 +12,9 @@ import About from './pages/About/About';
 import whatappLogo from './assets/wlogo.png';
 import Preloader from './components/loader/Preloader';
 import PackageModel from './components/PackageModel/PackageModel';
+import Skill from './components/skills/Skill';
+import Consultation from './components/Consultation/Consultation';
+import WebDesignCreation from './components/WebDesignCreation/WebDesignCreation';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -42,6 +45,9 @@ function App() {
             {/* <section id="Portfolio"><Parallax type="portfolio" /></section> */}
             <PackageModel/>
             {/* <Portfolio /> */}
+            <Skill />
+            <Consultation />
+            <WebDesignCreation />
             <section id="Contact">
               <Contact />
             </section>

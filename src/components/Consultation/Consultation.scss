@@ -1,0 +1,127 @@
+@import "../../app.scss";
+
+.consultation {
+  width: 100%;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #0054a6, #014b97, #004688);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+   scroll-snap-align: center;
+  scroll-snap-stop: always;
+
+  /* TOP LEFT SHAPE */
+  &::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: -120px;
+    width: 450px;
+    height: 450px;
+    background: rgba(0, 112, 204, 0.25);
+    border-radius: 50%;
+    filter: blur(10px);
+  }
+
+  /* BOTTOM RIGHT SHAPE */
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    right: -150px;
+    width: 520px;
+    height: 520px;
+    background: rgba(0, 112, 204, 0.25);
+    border-radius: 50%;
+    filter: blur(10px);
+  }
+
+  /* DOT PATTERN LEFT */
+  .dots-left {
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+
+    span {
+      width: 12px;
+      height: 12px;
+      background: rgba(0, 150, 255, 0.35);
+      border-radius: 50%;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  /* DOT PATTERN RIGHT */
+  .dots-right {
+    position: absolute;
+    bottom: 140px;
+    right: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+
+    span {
+      width: 12px;
+      height: 12px;
+      background: rgba(0, 150, 255, 0.35);
+      border-radius: 50%;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .consultation__content {
+    position: relative;
+    z-index: 5;
+    max-width: 900px;
+    margin: auto;
+    color: #fff;
+
+    .consultation__title {
+      font-size: 38px;
+      font-weight: 800;
+      margin-bottom: 20px;
+
+      @include mobile {
+        font-size: 28px;
+        padding: 0 10px;
+      }
+    }
+
+    .consultation__subtitle {
+      font-size: 17px;
+      opacity: 0.9;
+      margin-bottom: 5px;
+
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+
+    .consultation__btn {
+      margin-top: 35px;
+      padding: 14px 40px;
+      border-radius: 30px;
+      background: #ffffff;
+      border: none;
+      color: #e60026;
+      font-weight: 700;
+      letter-spacing: 1px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s ease;
+
+      &:hover {
+        background: #000;
+      }
+    }
+  }
+}

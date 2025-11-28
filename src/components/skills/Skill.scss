@@ -1,0 +1,225 @@
+@import "../../app.scss";
+
+.skill {
+  width: 100%;
+  padding: 80px 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, #373632, #111132);
+  position: relative;
+  text-align: center;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+
+  .skillImage {
+  position: absolute;  // make it sit behind the text
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;   // ensure it doesn’t overflow hero
+  z-index: 0;         // behind text
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // cover full screen, maintain aspect ratio
+    opacity: 0.5;
+  }
+}
+  .skill__subtitle {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #ffffff;
+    background: rgba(0, 27, 83, 0.5);
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+
+  .skill__title {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 60px;
+    line-height: 1.3;
+
+    @include mobile {
+      font-size: 26px;
+      padding: 0 20px;
+    }
+  }
+
+  .skill__cards {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+    margin-bottom: 50px;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+
+/* ------------------------
+   CARD STYLING
+------------------------- */
+
+.skillCard {
+  
+  width: 550px;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  padding: 40px 30px;
+  text-align: left;
+  position: relative;
+  transition: all 0.3s ease;
+
+  @include mobile {
+    width: 90%;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+
+  .skillCard__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #002349;
+  }
+
+  .skillCard__desc {
+    margin-top: 10px;
+    color: #6e7a8a;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  /* PRICE BOX */
+  .skillCard__priceBox {
+    background: #003366;
+    color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 5px;
+
+    .currency {
+      font-size: 22px;
+      font-weight: 600;
+      transform: translateY(-2px);
+    }
+
+    .price {
+      font-size: 36px;
+      font-weight: 800;
+    }
+
+    .month {
+      font-size: 14px;
+      font-weight: 600;
+      transform: translateY(5px);
+    }
+  }
+
+  /* LIST */
+  .skillCard__list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+
+    li {
+      font-size: 15px;
+      margin-bottom: 10px;
+      color: #333;
+      padding-left: 28px;
+      position: relative;
+
+      &::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #0070f3;
+        font-size: 18px;
+      }
+    }
+  }
+
+  /* BUTTON */
+  .skillCard__btn {
+    width: 100%;
+    background: #0070f3;
+    border: none;
+    color: #ffffff;
+    padding: 14px 0;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    &:hover {
+      background: #0057c2;
+    }
+  }
+}
+
+/* ------------------------
+   ACTIVE / MIDDLE CARD
+------------------------- */
+
+.skillCard--active {
+    margin-top: 40px;
+    @include mobile{
+        margin-top: 0px;
+    }
+
+  background: #003366;
+  color: #ffffff;
+  transform: scale(1.05);
+
+  .skillCard__title {
+    color: #ffffff;
+  }
+
+  .skillCard__desc {
+    color: #c9d4e0;
+  }
+
+  .skillCard__priceBox {
+    background: #ffffff;
+    color: #003366;
+  }
+
+  .skillCard__list li {
+    color: #e3e9f0;
+
+    &::before {
+      color: #ffffff;
+    }
+  }
+
+  .skillCard__btn {
+    background: #ffffff;
+    color: #003366;
+
+    &:hover {
+      background: #e4e4e4;
+    }
+  }
+}
