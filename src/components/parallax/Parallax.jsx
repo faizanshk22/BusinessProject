@@ -60,7 +60,7 @@ function Parallax({ type }) {
       <div className="rectangleBorder">
         <div className="innerContent">
           <motion.img
-            src="https://cdn.prod.website-files.com/66e3fc0ead389c7ea9c29d6e/66e3fc0ead389c7ea9c29f1c_NewArtboard-Animation12-ezgif.com-video-to-gif-converter.gif"
+            src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWkwc3Bkbmpna2pqeGlzamdxdnNnODdjaGZxYjJtcmQwdHd4NTV1ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ZF1TL1VDIzCwDSOovY/giphy.gif"
             className="rocketImage"
             style={{ y: rocketY }}
           />

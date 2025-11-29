@@ -55,15 +55,15 @@ function Contact() {
         <h1 variants={variants}>Get in touch!</h1>
         <div className="item" variants={variants}>
         <img width="30" height="30" src="email.png" alt="Email"/>
-          <p>hr-devcoders-inc@hotmail.com</p>
+          <p>hello-hr.onsets@outlook.com</p>
         </div>
         <div className="item" variants={variants}>
         <img width="30" height="30" src="location.png" alt="Location" className='item2'/>
-          <span>Dubai Tower, Shalimar Link Road, Lahore, 54840</span>
+          <span>27-B Haseeb Block, Azam Garden, Multan Road, Lahore, 54000</span>
         </div>
         <div className="item" variants={variants}>
         <img width="30" height="30" src="phone.png" alt="Phone"/>
-          <p>+92 3244282516</p>
+          <p>+92 321 5547204</p>
         </div>
       </div>
       <div className="formContainer">
