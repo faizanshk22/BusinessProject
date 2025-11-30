@@ -58,11 +58,11 @@ function Contact() {
           <p>hello-hr.onsets@outlook.com</p>
         </div>
         <div className="item" variants={variants}>
-        <img width="30" height="30" src="location.png" alt="Location" className='item2'/>
+        <img width="30" height="30" src="https://img.icons8.com/?size=100&id=bqSGWblWbynM&format=png&color=000000" alt="Location" className='item2'/>
           <span>27-B Haseeb Block, Azam Garden, Multan Road, Lahore, 54000</span>
         </div>
         <div className="item" variants={variants}>
-        <img width="30" height="30" src="phone.png" alt="Phone"/>
+        <img width="30" height="30" src="https://img.icons8.com/?size=100&id=44034&format=png&color=000000" alt="Phone"/>
           <p>+92 321 5547204</p>
         </div>
       </div>
