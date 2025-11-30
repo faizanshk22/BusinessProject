@@ -8,13 +8,14 @@ import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
 import Cursor from './components/cursor/Cursor';
-import About from './pages/About/About';
+// import About from './pages/About/About';
 import whatappLogo from './assets/wlogo.png';
 import Preloader from './components/loader/Preloader';
 import PackageModel from './components/PackageModel/PackageModel';
 import Skill from './components/skills/Skill';
 import Consultation from './components/Consultation/Consultation';
 import WebDesignCreation from './components/WebDesignCreation/WebDesignCreation';
+import Approach from './components/Approach/Approach';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -48,14 +49,14 @@ function App() {
             <Skill />
             <Consultation />
             <WebDesignCreation />
-            <section id="Contact">
+            <Approach />
               <Contact />
-            </section>
+           
             <section className='footer'>
             </section>
           </div>
         } />
-        <Route path='/about' element={<About />} />
+        {/* <Route path='/about' element={<About />} /> */}
       </Routes>
     </Router>
     <div className="whatsapp-button">

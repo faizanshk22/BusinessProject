@@ -49,7 +49,7 @@ function Contact() {
     };
 
   return (
-    <>
+    <div className='contactDiv'>
     <div ref={ref} className="contact" variants={variants} initial="initial" whileInView="animate">
       <div className="textContainer" variants={variants}>
         <h1 variants={variants}>Get in touch!</h1>
@@ -83,7 +83,7 @@ function Contact() {
       </div>
     </div>
     <Footer/>
-    </>
+    </div>
   );
 }
 

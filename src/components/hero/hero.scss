@@ -122,6 +122,11 @@ height: 100vh;
       img {
         width: 50px;
       }
+       @include mobile{
+      img{
+        display: none;
+      }
+    }
     }
   }
 
@@ -175,7 +180,7 @@ height: 100vh;
   @include mobile {
     padding: 10px 20px;
     font-size: 14px;
-    margin-top: 40px;
+    margin-top: 220px;
     margin-left: 130px;
   }
 }

@@ -1,5 +1,11 @@
 @import "../../app.scss";
-
+.contactDiv{
+  height: 80vh;
+  max-width: 100%;
+  background: #014b97;
+  @include mobile{
+    height: 90vh;
+  }
 .contact{
     height: 100%;
     max-width: 1366px;
@@ -117,4 +123,5 @@
       }
     }
 
+}
 }
