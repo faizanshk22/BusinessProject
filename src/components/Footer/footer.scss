@@ -8,7 +8,7 @@
 
   @include mobile {
     // margin-top: 0px;
-    position: fixed; /* Keeps the footer sticky on mobile */
+    position: relative; /* Keeps the footer sticky on mobile */
   }
 
   &.about-page-footer {
