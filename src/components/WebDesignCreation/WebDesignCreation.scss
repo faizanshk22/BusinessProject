@@ -1,5 +1,257 @@
+// @import "../../app.scss";
+
+// .webprocess {
+//   width: 100%;
+//   padding: 60px 0;
+//   text-align: center;
+//   background: #fff9f9;
+//   scroll-snap-align: center;
+//   scroll-snap-stop: always;
+
+//   h1 {
+//     font-size: 40px;
+//     font-weight: 700;
+//     color: #111;
+
+//     span {
+//       color: #014b97;     // green text
+//     }
+//   }
+
+//   .subtitle {
+//     width: 60%;
+//     margin: 10px auto 40px auto;
+//     font-size: 16px;
+//     color: #444;
+//   }
+
+//   .timeline {
+//     width: 80%;
+//     margin: auto;
+//     position: relative;
+
+//     &::before {
+//       content: "";
+//       position: absolute;
+//       width: 2px;
+//       background: #dcdcdc;
+//       top: 0;
+//       bottom: 0;
+//       left: 50%;
+//       transform: translateX(-50%);
+//     }
+
+//     .container {
+      
+//       width: 50%;
+//       padding: 20px 0;
+//       position: relative;
+
+//       .hex {
+//         width: 20px;
+//         height: 20px;
+//         background: #014b97;
+//         clip-path: polygon(
+//           25% 0%, 75% 0%, 
+//           100% 50%, 75% 100%, 
+//           25% 100%, 0% 50%
+//         );
+//         position: absolute;
+//         top: 40%;
+//         transform: translateY(-50%);
+//         z-index: 10;
+//         box-shadow: 0 0 10px rgba(22, 163, 74, 0.5);
+//       }
+
+//       .card {
+//         width: 330px;
+//         background: #fff;
+//         color: gray;
+//         padding: 25px;
+//         border-radius: 6px;
+//         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+//         border-left: 4px solid #014b97;
+
+//           &:hover {
+//     transform: translateY(-6px);
+//   }
+
+//         h2 {
+//           font-size: 20px;
+//           margin-bottom: 10px;
+//           font-weight: 700;
+//         }
+
+//         p {
+//           font-size: 15px;
+//           line-height: 1.6;
+//           color: #555;
+//         }
+//       }
+//     }
+
+//     .right {
+//       left: 50%;
+//       text-align: left;
+
+//       .hex {
+//         left: -10px;
+//       }
+
+//       .card {
+//         margin-left: 40px;
+//       }
+//     }
+
+//     .left {
+//       left: 0%;
+//       text-align: right;
+
+//       .hex {
+//         right: -10px;
+//       }
+
+//       .card {
+//         margin-left: auto;
+//         margin-right: 40px;
+//       }
+//     }
+//   }
+// }
+
+// /* RESPONSIVE FOR MOBILE */
+// @media (max-width: 900px) {
+//   .webprocess .timeline::before {
+//     left: 20px;
+//   }
+
+//   .webprocess .timeline .container {
+//     width: 100%;
+//     padding-left: 50px !important;
+
+//     .card {
+//       width: 90% !important;
+//       margin: 0 !important;
+//     }
+
+//     .hex {
+//       left: 20px !important;
+//       right: auto !important;
+//     }
+//   }
+// }
+// @include mobile {
+//   .webprocess {
+//     padding: 40px 0;
+
+//     .subtitle {
+//       width: 90%;
+//     }
+
+//     .timeline {
+//       width: 95%;
+
+//       &::before {
+//         left: 20px; // move center line to left
+//       }
+
+//       .container {
+//         width: 100%;
+//         padding-left: 50px !important;
+//         text-align: left !important;
+
+//         .hex {
+//           left: 20px !important;
+//           right: auto !important;
+//         }
+
+//         .card {
+//           width: 90% !important;
+//           margin: 0 !important;
+//         }
+//       }
+
+//       .left,
+//       .right {
+//         left: 0 !important;
+
+//         .card {
+//           margin: 0 0 20px 0 !important;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .industries {
+//   margin-bottom: 100px;
+//   margin-top: 80px;
+//   padding: 40px 0;
+//   background-color: #f9fafb;
+
+//   h2 {
+//     font-size: 28px;
+//     font-weight: 700;
+//     color: #111;
+//     margin-bottom: 20px;
+
+//     span {
+//       color: #014b97; // blue text
+//     }
+//   }
+
+//   .description {
+//     font-size: 16px;
+//     line-height: 1.6;
+//     color: #444;
+//     width: 80%;
+//     margin: 0 auto 30px;
+//   }
+
+//   .industry-list {
+//     ul {
+//       display: grid;
+//       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+//       gap: 10px;
+//       list-style-type: none;
+//       padding: 0;
+
+
+//       li {
+//         font-size: 16px;
+//         color: #1d4ed8;  // blue link color
+//         cursor: pointer;
+//         transition: color 0.3s;
+
+//         &:hover {
+//           color: #014b97;  // blue hover effect
+//         }
+//       }
+//     }
+//   }
+// }
+// /* RESPONSIVE FOR MOBILE */
+// @include mobile {
+//   .industries {
+//     margin-top: -10px;
+//     padding: 20px 0;
+
+//     .description {
+//       width: 90%;
+//     }
+
+//     .industry-list ul {
+//       grid-template-columns: 1fr 1fr;
+//     }
+//   }
+// }
+
+
 @import "../../app.scss";
 
+/* ===========================
+   WEB PROCESS SECTION
+=========================== */
 .webprocess {
   width: 100%;
   padding: 60px 0;
@@ -14,22 +266,29 @@
     color: #111;
 
     span {
-      color: #014b97;     // green text
+      color: #014b97;
     }
+      @include mobile{
+       margin-top: 50px; 
+      }
   }
 
   .subtitle {
     width: 60%;
-    margin: 10px auto 40px auto;
+    margin: 10px auto 40px;
     font-size: 16px;
     color: #444;
   }
 
+  /* ===========================
+     TIMELINE
+  =========================== */
   .timeline {
     width: 80%;
     margin: auto;
     position: relative;
 
+    /* center line */
     &::before {
       content: "";
       position: absolute;
@@ -41,40 +300,44 @@
       transform: translateX(-50%);
     }
 
+    /* Timeline steps */
     .container {
-      
       width: 50%;
       padding: 20px 0;
       position: relative;
+      margin-bottom: 80px;     /* 🔥 IMPORTANT! Prevents overlapping */
 
       .hex {
         width: 20px;
         height: 20px;
         background: #014b97;
         clip-path: polygon(
-          25% 0%, 75% 0%, 
-          100% 50%, 75% 100%, 
+          25% 0%, 75% 0%,
+          100% 50%, 75% 100%,
           25% 100%, 0% 50%
         );
         position: absolute;
         top: 40%;
         transform: translateY(-50%);
-        z-index: 10;
-        box-shadow: 0 0 10px rgba(22, 163, 74, 0.5);
+        z-index: 20;
       }
 
       .card {
         width: 330px;
+        max-width: 100%;        /* prevents overflow */
         background: #fff;
         color: gray;
         padding: 25px;
         border-radius: 6px;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         border-left: 4px solid #014b97;
+        position: relative;     /* 🔥 makes card participate in layout */
+        z-index: 10;
+        transition: 0.3s ease;
 
-          &:hover {
-    transform: translateY(-6px);
-  }
+        &:hover {
+          transform: translateY(-6px);
+        }
 
         h2 {
           font-size: 20px;
@@ -90,6 +353,7 @@
       }
     }
 
+    /* RIGHT SIDE */
     .right {
       left: 50%;
       text-align: left;
@@ -103,6 +367,7 @@
       }
     }
 
+    /* LEFT SIDE */
     .left {
       left: 0%;
       text-align: right;
@@ -119,7 +384,9 @@
   }
 }
 
-/* RESPONSIVE FOR MOBILE */
+/* ===========================
+   RESPONSIVE @ 900px
+=========================== */
 @media (max-width: 900px) {
   .webprocess .timeline::before {
     left: 20px;
@@ -128,47 +395,52 @@
   .webprocess .timeline .container {
     width: 100%;
     padding-left: 50px !important;
+  }
 
-    .card {
-      width: 90% !important;
-      margin: 0 !important;
-    }
+  .webprocess .timeline .container .card {
+    width: calc(100% - 50px) !important;  /* 🔥 Perfect width on mobile */
+    margin: 0 !important;
+  }
 
-    .hex {
-      left: 20px !important;
-      right: auto !important;
-    }
+  .webprocess .timeline .container .hex {
+    left: 20px !important;
+    right: auto !important;
   }
 }
+
+/* ===========================
+   MOBILE MIXIN
+=========================== */
 @include mobile {
   .webprocess {
     padding: 40px 0;
 
     .subtitle {
-      width: 90%;
+      width: 90%; 
+      margin-bottom:350px;
     }
 
     .timeline {
       width: 95%;
 
       &::before {
-        left: 20px; // move center line to left
+        left: 20px;
       }
 
       .container {
         width: 100%;
         padding-left: 50px !important;
         text-align: left !important;
+      }
 
-        .hex {
-          left: 20px !important;
-          right: auto !important;
-        }
+      .hex {
+        left: 20px !important;
+        right: auto !important;
+      }
 
-        .card {
-          width: 90% !important;
-          margin: 0 !important;
-        }
+      .card {
+        width: calc(100% - 50px) !important;
+        margin: 0 0 20px 0 !important;
       }
 
       .left,
@@ -176,13 +448,17 @@
         left: 0 !important;
 
         .card {
-          margin: 0 0 20px 0 !important;
+          margin: 150px 0 20px 0 !important;
+          
         }
       }
     }
   }
 }
 
+/* ===========================
+   INDUSTRIES SECTION
+=========================== */
 .industries {
   margin-bottom: 100px;
   margin-top: 80px;
@@ -196,7 +472,7 @@
     margin-bottom: 20px;
 
     span {
-      color: #014b97; // blue text
+      color: #014b97;
     }
   }
 
@@ -208,29 +484,29 @@
     margin: 0 auto 30px;
   }
 
-  .industry-list {
-    ul {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 10px;
-      list-style-type: none;
-      padding: 0;
+  .industry-list ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
 
+    li {
+      font-size: 16px;
+      color: #1d4ed8;
+      cursor: pointer;
+      transition: color 0.3s;
 
-      li {
-        font-size: 16px;
-        color: #1d4ed8;  // blue link color
-        cursor: pointer;
-        transition: color 0.3s;
-
-        &:hover {
-          color: #014b97;  // blue hover effect
-        }
+      &:hover {
+        color: #014b97;
       }
     }
   }
 }
-/* RESPONSIVE FOR MOBILE */
+
+/* ===========================
+   INDUSTRIES MOBILE
+=========================== */
 @include mobile {
   .industries {
     margin-top: -10px;
