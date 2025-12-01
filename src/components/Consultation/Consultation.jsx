@@ -1,5 +1,6 @@
 import React from "react";
 import "./Consultation.scss";
+import { PopupButton } from "react-calendly";
 
 function Consultation() {
   return (
@@ -16,7 +17,12 @@ function Consultation() {
           Professional support is only a click away.
         </p>
 
-        <button className="consultation__btn">GET STARTED</button>
+        <PopupButton
+          url="https://calendly.com/faizanshk20/30min"
+          rootElement={document.getElementById("root")}
+          text="Book Your Free Consultation"
+          className="consultation__btn"
+        />
 
       </div>
     </div>
@@ -24,4 +30,3 @@ function Consultation() {
 }
 
 export default Consultation;
-
