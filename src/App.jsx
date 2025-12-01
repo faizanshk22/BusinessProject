@@ -7,7 +7,7 @@ import Parallax from './components/parallax/Parallax';
 import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
-import Cursor from './components/cursor/Cursor';
+// import Cursor from './components/cursor/Cursor';
 // import About from './pages/About/About';
 import whatappLogo from './assets/wlogo.png';
 import Preloader from './components/loader/Preloader';
@@ -17,6 +17,7 @@ import Consultation from './components/Consultation/Consultation';
 import WebDesignCreation from './components/WebDesignCreation/WebDesignCreation';
 import Approach from './components/Approach/Approach';
 import Footer from './components/Footer/Footer';
+import GetStarted from './components/GetStarted/GetStarted';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,12 +35,13 @@ function App() {
   return (
     <div>
     <Router>
-      <Cursor />
       <Routes>
         <Route path='/' element={
           <div>
             <section id="Homepage">
               <Navbar />
+                    {/* <Cursor /> */}
+
               <Hero />
             </section>
             <section id="Services"><Parallax type="services" /></section>
@@ -57,7 +59,7 @@ function App() {
             </section>
           </div>
         } />
-        {/* <Route path='/about' element={<About />} /> */}
+        <Route path='/getstarted' element={<GetStarted />} />
       </Routes>
     </Router>
     <div className="whatsapp-button">

@@ -1,0 +1,170 @@
+@import "../../app.scss";
+.contactDiv{
+  height: 80vh;
+  max-width: 100%;
+  background: #000;
+  @include mobile{
+    height: 100vh;
+    position: relative;
+  }
+.contact{
+    height: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    @include mobile{
+      margin-top: -10px;
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+      }
+
+    .textContainer{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @include mobile{
+           gap: 10px;
+           text-align: center;
+           align-items: center;
+           margin-top: 130px;
+          }
+          .item {
+            display: flex;
+            align-items: center; /* Centers items vertically */
+            gap: 10px; /* Optional: Adds space between image and text */
+          }
+          .item2{
+            @include mobile{
+              
+              margin-top: -20px;
+              margin-right: -20px;
+            }
+          }
+          
+          .item img {
+            display: block; /* Ensures no extra space below the image */
+            @include mobile{
+              margin-left: 10px;
+            }
+          }
+          
+
+        h1{
+            font-size: 100px;
+            line-height: 88px;
+
+            @include mobile{
+                font-size: 36px;
+                line-height: 1.2;
+              }
+        }
+        span{
+            font-weight: 300;
+        }
+    }
+    .formContainer{
+        flex: 1;
+        position: relative;
+        
+
+        @include mobile{
+            margin-top: -70px;
+            margin-bottom: 60px;
+            padding: 50px;
+            width: 100%;
+          }
+
+        // .phoneSvg{
+        //     stroke: orange;
+        //     position: absolute;
+        //     margin: auto;
+        //     z-index: -1;
+
+        //     @include mobile{
+        //      svg{ 
+        //       margin-top: 50px;
+        //       width: 250px;
+        //       height: 250px;}
+        //     }
+        // }
+
+        form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        input,textarea{
+            padding: 20px;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            border-radius: 5px;
+
+            @include mobile{
+               padding: 10px;
+              }
+        }
+        button{
+            padding: 20px;
+            border: none;
+            background-color:  rgb(230, 159, 137);
+            cursor: pointer;
+            font-weight: 500;
+            @include mobile{
+                padding: 10px;
+              }
+                &:hover {
+    background: white;
+    color: #000;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+  }
+        }
+      }
+    }
+
+}
+.closeIcon {
+  position: absolute;
+  top: 30px;
+  right: 100px;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10%;
+
+  text-decoration: none;
+
+  transition: 0.3s ease;
+
+  &:hover {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+
+  @include mobile {
+    top: 60px;
+    right: 50px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+}
+
+}

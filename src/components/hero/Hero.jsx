@@ -1,7 +1,7 @@
-import React from 'react';
 import './hero.scss';
 import { motion } from 'framer-motion';
 import resume from '../../assets/FaizanCV.pdf';
+import { Link } from "react-router-dom";
 
 const textVariants = {
   initial: {
@@ -69,7 +69,9 @@ function Hero() {
           </motion.div>
           <motion.img variants={textVariants} animate='scrollButton' src="/scroll.png" alt="" />
         </motion.div>
-        <div className='btn'>GET STARTED</div>
+        <div className="btn">
+  <Link to="/getstarted">GET STARTED</Link>
+</div>
       </div>
       <motion.div className="slidingTexContainer" variants={sliderVariants} initial="initial" animate="animate">
       BEST IT SOLUTIONS
