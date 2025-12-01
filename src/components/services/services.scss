@@ -13,7 +13,7 @@
     @include mobile{
      font-size: 28px;
      font-weight: bold;
-     margin-top: -80px;
+     margin-top: -40px;
     }
   }
 
@@ -102,7 +102,10 @@
     &:last-child {
       border-radius: 40px 40px 40px 200px;
       position: relative;
-
+      @include mobile{
+      border-radius: 40px 40px 40px 40px;
+      margin-bottom: 50px;
+      }
       .rocket {
         width: 40px;
         height: 70px;
