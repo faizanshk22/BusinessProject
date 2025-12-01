@@ -16,6 +16,7 @@ import Skill from './components/skills/Skill';
 import Consultation from './components/Consultation/Consultation';
 import WebDesignCreation from './components/WebDesignCreation/WebDesignCreation';
 import Approach from './components/Approach/Approach';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -51,7 +52,7 @@ function App() {
             <WebDesignCreation />
             <Approach />
               <Contact />
-           
+           <Footer />
             <section className='footer'>
             </section>
           </div>
