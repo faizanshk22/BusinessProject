@@ -90,21 +90,21 @@ function WebDesignCreation() {
 
         <div className="industry-list">
           <ul>
-            <li>Medical Spa Website Design Services</li>
-            <li>Painting Website Design Services</li>
-            <li>Eye Doctor Website Design Services</li>
-            <li>Movers Website Design Services</li>
-            <li>Medical Supplies Website Design Services</li>
-            <li>Barbershop Website Design Services</li>
-            <li>Architecture Website Design Services</li>
-            <li>Hair Salon Web Design Services</li>
-            <li>Manufacturing Companies Web Design Services</li>
-            <li>Restaurant Web Design Services</li>
-            <li>Plastic Surgery Web Design Services</li>
-            <li>Church Web Design Services</li>
-            <li>Law Firm Web Design Services</li>
-            <li>Legal Marketing</li>
-            <li>Remodeling Web Design Services</li>
+            <li>Medical Spa Website Development Services</li>
+            <li>Painting Website Development Services</li>
+            <li>Eye Doctor Website Development Services</li>
+            <li>Movers Website Development Services</li>
+            <li>Medical Supplies Website Development Services</li>
+            <li>Barbershop Website Development Services</li>
+            <li>Architecture Website Development Services</li>
+            <li>Hair Salon Web Development Services</li>
+            <li>Manufacturing Companies Web Development Services</li>
+            <li>Restaurant Web Development Services</li>
+            <li>Church Web Development Services</li>
+            <li>Law Firm Web Development Services</li>
+            <li>Remodeling Web Development Services</li>
+            <li>All kind of Business Development Services</li>
+            <li>Ecommerce Website Development Services</li>
           </ul>
         </div>
       </div>
