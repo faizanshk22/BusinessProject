@@ -32,7 +32,7 @@ function App() {
     return <Preloader />;
   }
   return (
-    <>
+    <div>
     <Router>
       <Cursor />
       <Routes>
@@ -65,7 +65,7 @@ function App() {
     <img src={whatappLogo} width="60" alt="w/a" />
   </a>
 </div>
-    </>
+    </div>
   );
 }
 
