@@ -7,8 +7,8 @@
   z-index: 1000; /* Ensure it stays on top of other elements */
 
   @include mobile {
-    margin-top: 0px;
-    position: relative; /* Keeps the footer sticky on mobile */
+    // margin-top: 0px;
+    position: fixed; /* Keeps the footer sticky on mobile */
   }
 
   &.about-page-footer {
