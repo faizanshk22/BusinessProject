@@ -63,7 +63,7 @@ function App() {
       </Routes>
     </Router>
     <div className="whatsapp-button">
-  <a href="https://wa.me/923244282516?text=Hello How can I help you?" target="_blank">
+  <a href="https://wa.me/923054595364?text=Hello How can I help you?" target="_blank">
     <img src={whatappLogo} width="60" alt="w/a" />
   </a>
 </div>

@@ -3,6 +3,8 @@
   height: 80vh;
   max-width: 100%;
   background: #000;
+    scroll-snap-align: center;
+  scroll-snap-stop: always;
   @include mobile{
     height: 100vh;
     position: relative;
@@ -94,37 +96,25 @@
         //     }
         // }
 
-        form {
+        .quickLinks {
         display: flex;
         flex-direction: column;
-        gap: 25px;
-
-        input,textarea{
-            padding: 20px;
-            background-color: transparent;
-            border: 1px solid white;
-            color: white;
-            border-radius: 5px;
-
-            @include mobile{
-               padding: 10px;
-              }
-        }
-        button{
-            padding: 20px;
-            border: none;
-            background-color:  rgb(230, 159, 137);
-            cursor: pointer;
-            font-weight: 500;
-            @include mobile{
-                padding: 10px;
-              }
-                &:hover {
-    background: white;
-    color: #000;
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
-  }
-        }
+        margin-top: -100px;
+        margin-left: 100px;
+        color: white;
+        font-size: 48px;
+       h1{
+        margin-left: 20px;
+        font-size: 18px;
+        color: blue($color: #000000);
+        text-decoration-thickness: 2px;
+        font-weight: 100;
+        text-decoration: underline;
+        cursor: pointer;
+       }
+       .one{
+        margin-top: 30px;
+       }
       }
     }
 
