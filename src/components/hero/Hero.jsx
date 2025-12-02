@@ -69,9 +69,9 @@ function Hero() {
           </motion.div>
           <motion.img variants={textVariants} animate='scrollButton' src="/scroll.png" alt="" />
         </motion.div>
-        <div className="btn">
-  <Link to="/getstarted">GET STARTED</Link>
-</div>
+      <Link to="/getstarted">   <div className="btn">
+ GET STARTED
+</div> </Link>
       </div>
       <motion.div className="slidingTexContainer" variants={sliderVariants} initial="initial" animate="animate">
       BEST IT SOLUTIONS

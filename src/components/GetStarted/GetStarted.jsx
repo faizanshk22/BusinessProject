@@ -66,7 +66,7 @@ function GetStarted() {
         whileInView="animate"
       >
         <div className="textContainer" variants={variants}>
-          <h1 variants={variants}>Get in touch!</h1>
+          <h1 variants={variants}>Let's Talk!</h1>
 
           <div className="item" variants={variants}>
             <img width="30" height="30" src="email.png" alt="Email" />
