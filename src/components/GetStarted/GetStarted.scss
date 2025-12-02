@@ -2,7 +2,8 @@
 .contactDiv{
   height: 80vh;
   max-width: 100%;
-  background: #000;
+background: linear-gradient(180deg, #373632, #111132);      scroll-snap-align: center;
+  scroll-snap-stop: always;
   @include mobile{
     height: 100vh;
     position: relative;
@@ -113,14 +114,14 @@
         button{
             padding: 20px;
             border: none;
-            background-color:  rgb(230, 159, 137);
+            background-color: white;
             cursor: pointer;
             font-weight: 500;
             @include mobile{
                 padding: 10px;
               }
                 &:hover {
-    background: white;
+    background: #014b97;
     color: #000;
     box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
   }
@@ -129,42 +130,68 @@
     }
 
 }
-.closeIcon {
-  position: absolute;
-  top: 30px;
-  right: 100px;
+   .consultation__btn {
+      margin-top: 35px;
+      padding: 14px 40px;
+      border-radius: 30px;
+      background: #ffffff;
+      border: none;
+      color: #e60026;
+      font-weight: 700;
+      letter-spacing: 1px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s ease;
 
-  width: 40px;
-  height: 40px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: 22px;
-  font-weight: bold;
-  cursor: pointer;
-
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 10%;
-
-  text-decoration: none;
-
-  transition: 0.3s ease;
-
-  &:hover {
-    opacity: 0.6;
-    transform: scale(1.05);
-  }
-
-  @include mobile {
-    top: 60px;
-    right: 50px;
-    width: 35px;
-    height: 35px;
-    font-size: 20px;
-  }
+      &:hover {
+        background: gray;
+      }
+      @include mobile{
+        margin-top: 0px;
+        padding: 10px 20px;
+      }
+    }
+.map{
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  margin-top: -60px;
 }
+// .closeIcon {
+//   position: absolute;
+//   top: 80px;
+//   right: 240px;
+
+//   width: 40px;
+//   height: 40px;
+
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   font-size: 22px;
+//   font-weight: bold;
+//   cursor: pointer;
+
+//   color: #fff;
+//   border: 2px solid #fff;
+//   border-radius: 10%;
+
+//   text-decoration: none;
+
+//   transition: 0.3s ease;
+
+//   &:hover {
+//     opacity: 0.6;
+//     transform: scale(1.05);
+//   }
+
+//   @include mobile {
+//     top: 60px;
+//     right: 50px;
+//     width: 35px;
+//     height: 35px;
+//     font-size: 20px;
+//   }
+// }
 
 }

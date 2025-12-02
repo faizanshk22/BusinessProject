@@ -4,6 +4,9 @@ import { motion, useInView } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { Link } from "react-router-dom";
 import Map from '../Map/Map';
+import Navbar from '../navbar/Navbar';
+import { PopupButton } from "react-calendly";
+
 
 const variants = {
   initial: {
@@ -52,11 +55,11 @@ function GetStarted() {
 
   return (
     <div className='contactDiv'>
-
-      {/* ✅ Close Button */}
+      <Navbar/>
+      {/* ✅ Close Button
       <Link to="/" className="closeIcon">
         ✕
-      </Link>
+      </Link> */}
 
       <div
         ref={ref}
@@ -89,6 +92,15 @@ function GetStarted() {
             />
             <p>+92 321 5547204</p>
           </div>
+          <div>
+             <PopupButton
+          url="https://calendly.com/faizanshk20/30min"
+          rootElement={document.getElementById("root")}
+          text="Book Your Free Consultation"
+          className="consultation__btn"
+        />
+
+          </div>
         </div>
 
         <div className="formContainer">
@@ -107,8 +119,11 @@ function GetStarted() {
             {success && "Success"}
           </form>
         </div>
-        <Map />
+       
       </div>
+       <div className='map'>
+        <Map />
+        </div>
     </div>
   );
 }
