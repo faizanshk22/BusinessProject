@@ -47,12 +47,17 @@ function App() {
             <section id="Services"><Parallax type="services" /></section>
             <section id="Work-Service"><Services /></section>
             {/* <section id="Portfolio"><Parallax type="portfolio" /></section> */}
-            <PackageModel/>
+                  <div id="packageModel" >
+   <PackageModel/> </div>
             {/* <Portfolio /> */}
-            <Skill />
+         <div id="book-consultation" >
+             <Skill /> 
+             </div>
             <Consultation />
-            <WebDesignCreation />
-            <Approach />
+             <div id="webDesign" >
+            <WebDesignCreation /></div>
+           <div id="approach" >
+            <Approach /></div>
               <Contact />
            <Footer />
             <section className='footer'>
@@ -63,7 +68,7 @@ function App() {
       </Routes>
     </Router>
     <div className="whatsapp-button">
-  <a href="https://wa.me/923054595364?text=Hello How can I help you?" target="_blank">
+  <a href="https://wa.me/923244282516?text=Hello How can I help you?" target="_blank">
     <img src={whatappLogo} width="60" alt="w/a" />
   </a>
 </div>

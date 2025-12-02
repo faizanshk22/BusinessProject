@@ -19,6 +19,12 @@ const variants = {
 };
 
 function Contact() {
+  const scrollToSection = (id) => {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
     const ref = useRef();
     const formRef = useRef();
@@ -75,12 +81,12 @@ function Contact() {
           {success && "Success"}
         </form> */}
         <div className='quickLinks'>
-          Quick Links
-          <h1 className='one'>Book Consultation</h1>
-          <h1 className='two'>Our Services</h1>
-          <h1 className='three'>Design Process</h1>
-          <h1 className='four'>Our Approach</h1>
-          <h1 className='five'>Home</h1>
+         <h2>  Quick Links</h2>
+          <h1 className='one' onClick={() => scrollToSection("book-consultation")}>Check Pricing & Booking</h1>
+          <h1 className='two' onClick={() => scrollToSection("packageModel")}>Our Models & Services</h1>
+          <h1 className='three' onClick={() => scrollToSection("webDesign")}>Design Process</h1>
+          <h1 className='four' onClick={() => scrollToSection("approach")}>Our Approach</h1>
+          <h1 className='five' onClick={() => scrollToSection("Homepage")}>Home</h1>
         </div>
       </div>
     </div>
