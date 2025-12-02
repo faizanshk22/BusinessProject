@@ -55,7 +55,7 @@ function GetStarted() {
 
   return (
     <div className='contactDiv'>
-      <Navbar/>
+      <div className='nv'><Navbar/></div>
       {/* ✅ Close Button
       <Link to="/" className="closeIcon">
         ✕

@@ -1,7 +1,7 @@
 import React from 'react';
 import './navbar.scss';
 import {motion} from 'framer-motion';
-import Sidebar from '../sidebar/Sidebar';
+import { Link,NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -10,6 +10,12 @@ function Navbar() {
       <div className="wrapper">
         <motion.span initial={{opacity:0, scale:0.5}} animate={{opacity:1, scale:1}}
         transition={{duration:0.5}}><a href='/'><img src='ONSETSLOGO.png' alt='ONSETS LOGO' /></a></motion.span>
+       <span className='links'>   
+<Link to="/" className="home">Home</Link>
+  <NavLink to="/about" className="aboutLink">About Us</NavLink>
+  <NavLink to="/getStarted" className="contact">Contact</NavLink>       
+
+</span>
         <div className="social">
             <a href='https://wwww.facebook.com/ONSETSSoftwareCompany/' target="_blank" rel="noopener noreferrer"><img src="/facebook.png" alt="fb" /></a>
             <a href='https://www.instagram.com/onsetssoftwarecompany/' target="_blank" rel="noopener noreferrer"><img src="/instagram.png" alt="ig" /></a>

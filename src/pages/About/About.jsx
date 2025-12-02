@@ -1,64 +1,87 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import Navbar from '../../components/navbar/Navbar';
-import './about.scss';
-import Footer from '../../components/Footer/Footer';
-
-const slideIn = {
-  hidden: { opacity: 0, x: -100 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
-};
+import React from "react";
+import "./about.scss";
+import Navbar from "../../components/navbar/Navbar";
+// import profileImg from "../assets/profile.jpg"; // <-- replace with your image path
 
 function About() {
   return (
     <>
-      <Navbar />
-      <div className='about'>
-        <motion.div 
-          className='intro' 
-          variants={slideIn} 
-          initial='hidden' 
-          animate='visible'
-        >
-          <h3>About Me</h3>
-          <p>Hello! I'm Faizan Sheikh, a Full Stack MERN Developer with a passion for creating dynamic and responsive web applications. With a strong background in both front-end and back-end development, I specialize in building full-fledged applications that are not only functional but also user-friendly.</p>
-          <h3>My Journey</h3>
-          <p>I started my journey into web development with a keen interest in solving real-world problems through technology. Over the years, I've honed my skills in MongoDB, Express, React, and Node.js, allowing me to develop comprehensive applications from scratch</p>
-          <h3>What I Do</h3>
-          <p><strong>As a MERN stack developer, I work on:</strong></p>
-          <p><strong>Front-End Development:</strong> Crafting interactive and visually appealing user interfaces using React, HTML, CSS, and JavaScript.</p>
-          <p><strong>Back-End Development:</strong> Building robust APIs and server-side logic with Node.js and Express, ensuring efficient data management and seamless communication between client and server.</p>
-          <p><strong>Database Management:</strong> Designing and managing databases using MongoDB, optimizing data retrieval and storage processes.</p>
-          <p><strong>Deployment & Maintenance:</strong> Deploying applications on cloud platforms, maintaining and updating them to ensure optimal performance.</p>
-          <hr />
-          <h2>Let's Connect!</h2>
-          <p>I'm always open to new opportunities and collaborations. If you're looking for a passionate developer to bring your ideas to life, feel free to reach out. Let's build something amazing together!</p>
-         
-        </motion.div>
+    <Navbar/>
+    <section className="about" id="about">
+      <div className="about__container">
 
-        {/* <motion.div 
-          className='team' 
-          variants={slideIn} 
-          initial='hidden' 
-          animate='visible'
-        >
-          <div className='team-member'>
-            <img src='/' alt='Team Member 1' />
-            <h3>John Doe</h3>
-            <p>CEO & Founder</p>
+        {/* LEFT - Image / visual */}
+        {/* <div className="about__left"> */}
+          {/* <div className="about__img-wrap">
+            <img src={profileImg} alt="Profile" className="about__img" />
+            <div className="about__img-accent" />
+          </div> */}
+        {/* </div> */}
+
+        {/* RIGHT - Content */}
+        <div className="about__right">
+          <h1 className="about__title">Discover ONSETS:</h1>
+          <h2 className="about__subtitle">Your Premier Talent Partner</h2>
+
+          <p className="about__text">
+      At ONSETS, we’re all about the people. From our talent, teams, to partners: We believe the real magic lies in harnessing human potential. 
+            <strong> Winning, to us, means creating lasting relationships with our partners. We want to run marathons with you, not just the sprints</strong>
+          </p>
+
+          <div className="about__stats">
+            <div className="about__stat">
+              <div className="about__stat-number">10+</div>
+              <div className="about__stat-label">Years Experience</div>
+            </div>
+            <div className="about__stat">
+              <div className="about__stat-number">520+</div>
+              <div className="about__stat-label">Projects</div>
+            </div>
+            <div className="about__stat">
+              <div className="about__stat-number">Countless</div>
+              <div className="about__stat-label">Techs / Tools</div>
+            </div>
           </div>
-        </motion.div> */}
 
-        {/* <motion.div 
-          className='contact' 
-          variants={slideIn} 
-          initial='hidden' 
-          animate='visible'
-        >
-        
-        </motion.div> */}
+          <div className="about__skills">
+            <div className="about__skill">
+              <div className="about__skill-head">
+                <span>Web Development</span>
+                <span className="about__skill-percent">99%</span>
+              </div>
+              <div className="about__skill-bar">
+                <div className="about__skill-fill" style={{ width: "99%" }} />
+              </div>
+            </div>
+
+            <div className="about__skill">
+              <div className="about__skill-head">
+                <span>Mobile Development (IOS/Android)</span>
+                <span className="about__skill-percent">96%</span>
+              </div>
+              <div className="about__skill-bar">
+                <div className="about__skill-fill" style={{ width: "96%" }} />
+              </div>
+            </div>
+
+            <div className="about__skill">
+              <div className="about__skill-head">
+                <span>CRM - SEO - Payment Integrations</span>
+                <span className="about__skill-percent">95%</span>
+              </div>
+              <div className="about__skill-bar">
+                <div className="about__skill-fill" style={{ width: "95%" }} />
+              </div>
+            </div>
+          </div>
+
+          <div className="about__actions">
+            <a href="getStarted" className="btn btn--primary">Let's Connect</a>
+            {/* <a href="/portfolio" className="btn btn--ghost">See Portfolio</a> */}
+          </div>
+        </div>
       </div>
-      <Footer isAbout={true} />
+    </section>
     </>
   );
 }

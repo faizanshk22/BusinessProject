@@ -18,6 +18,7 @@ import WebDesignCreation from './components/WebDesignCreation/WebDesignCreation'
 import Approach from './components/Approach/Approach';
 import Footer from './components/Footer/Footer';
 import GetStarted from './components/GetStarted/GetStarted';
+import About from './pages/About/About';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -36,6 +37,8 @@ function App() {
     <div>
     <Router>
       <Routes>
+        <Route path="/about" element={<About />} />
+
         <Route path='/' element={
           <div>
             <section id="Homepage">
@@ -72,6 +75,7 @@ function App() {
     <img src={whatappLogo} width="60" alt="w/a" />
   </a>
 </div>
+
     </div>
   );
 }
