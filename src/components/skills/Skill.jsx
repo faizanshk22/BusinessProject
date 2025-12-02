@@ -1,5 +1,7 @@
 import React from "react";
 import "./Skill.scss";
+import { Link } from "react-router-dom";
+
 
 function Skill() {
   return (
@@ -36,7 +38,8 @@ function Skill() {
             <li>✔ Project Supervisor, 20 hrs/month</li>
           </ul>
 
-          <button className="skillCard__btn">GET STARTED →</button>
+          <Link to="/getstarted"> <button className="skillCard__btn">  GET STARTED
+           →</button></Link>
         </div>
 
         {/* ELITE REMOTE TEAM */}
@@ -58,7 +61,8 @@ function Skill() {
             <li>✔ UI/UX Engineer (part time), Est. 40 hrs/month</li>
           </ul>
 
-          <button className="skillCard__btn">GET STARTED →</button>
+         <Link to="/getstarted"> <button className="skillCard__btn">  GET STARTED
+           →</button></Link>
         </div>
 
         {/* ENTERPRISE REMOTE TEAM */}
@@ -80,7 +84,8 @@ function Skill() {
             <li>✔ QA Engineer (part time), Est. 80 hrs/month</li>
           </ul>
 
-          <button className="skillCard__btn">GET STARTED →</button>
+           <Link to="/getstarted"> <button className="skillCard__btn">  GET STARTED
+           →</button></Link>
         </div>
 
       </div>
