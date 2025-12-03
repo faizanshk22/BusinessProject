@@ -164,7 +164,8 @@ background: linear-gradient(180deg, #373632, #111132);
   scroll-snap-stop: always;
   margin-top: -60px;
   @include mobile{
-    margin-top: -100px;
+    margin-top: -150px;
+    height: 60%;
   }
 }
 // .closeIcon {
