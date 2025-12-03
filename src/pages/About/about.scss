@@ -14,7 +14,7 @@
 /* MAIN SECTION */
 .about {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   padding: 80px 20px;
   background: linear-gradient(180deg, #373632, #111132);
   scroll-snap-align: center;
@@ -22,6 +22,7 @@
 
   /* CONTAINER */
   &__container {
+    height: auto;
     max-width: 1200px;
     margin: 40px auto 0 auto;
     display: grid;

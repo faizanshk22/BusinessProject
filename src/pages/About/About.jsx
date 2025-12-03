@@ -7,7 +7,7 @@ function About() {
   return (
     <>
     <Navbar/>
-    <section className="about" id="about">
+    <div className="about" id="about">
       <div className="about__container">
 
         {/* LEFT - Image / visual */}
@@ -96,7 +96,7 @@ function About() {
         </div>
         </div>
       </div>
-    </section>
+    </div>
     </>
   );
 }
