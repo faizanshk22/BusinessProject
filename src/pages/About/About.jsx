@@ -2,7 +2,7 @@ import React from "react";
 import "./about.scss";
 import Navbar from "../../components/navbar/Navbar";
 // import profileImg from "../assets/profile.jpg"; // <-- replace with your image path
-
+import { Link } from "react-router-dom";
 function About() {
   return (
     <>
@@ -46,7 +46,7 @@ function About() {
           <div className="about__skills">
             <div className="about__skill">
               <div className="about__skill-head">
-                <span>Web Development</span>
+                <span className="head">Web Development</span>
                 <span className="about__skill-percent">99%</span>
               </div>
               <div className="about__skill-bar">
@@ -56,7 +56,7 @@ function About() {
 
             <div className="about__skill">
               <div className="about__skill-head">
-                <span>Mobile Development (IOS/Android)</span>
+                <span className="head">Mobile Development (IOS/Android)</span>
                 <span className="about__skill-percent">96%</span>
               </div>
               <div className="about__skill-bar">
@@ -66,7 +66,7 @@ function About() {
 
             <div className="about__skill">
               <div className="about__skill-head">
-                <span>CRM - SEO - Payment Integrations</span>
+                <span className="head">CRM - SEO - Payment Integrations</span>
                 <span className="about__skill-percent">95%</span>
               </div>
               <div className="about__skill-bar">
@@ -79,6 +79,21 @@ function About() {
             <a href="getStarted" className="btn btn--primary">Let's Connect</a>
             {/* <a href="/portfolio" className="btn btn--ghost">See Portfolio</a> */}
           </div>
+        </div>
+        <div className="last">
+        <div className="about-last">
+             <img 
+        src="https://devdimensions.com/wp-content/uploads/2023/07/about-get.png" 
+        alt="About Background" 
+        className="about-bg"
+      />
+
+     <Link to="/getstarted"> <img
+        src="https://devdimensions.com/wp-content/themes/dev-dimention/assets/images/get-arrow.png"
+        alt="Arrow"
+        className="about-arrow"
+      /></Link>
+        </div>
         </div>
       </div>
     </section>
