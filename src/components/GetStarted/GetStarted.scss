@@ -127,7 +127,6 @@ background: linear-gradient(180deg, #373632, #111132);
             font-weight: 500;
             @include mobile{
                 padding: 10px;
-                margin-bottom: 20px;
               }
                 &:hover {
     background: #014b97;
@@ -164,6 +163,9 @@ background: linear-gradient(180deg, #373632, #111132);
   scroll-snap-align: center;
   scroll-snap-stop: always;
   margin-top: -60px;
+  @include mobile{
+    margin-top: -100px;
+  }
 }
 // .closeIcon {
 //   position: absolute;
