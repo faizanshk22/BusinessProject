@@ -256,7 +256,7 @@ function About() {
             talk strategy.</span>
           </p>
 
-          <a href="/getstarted" className="cta-btn">
+          <a href="getstarted" className="cta-btn">
             Let’s Dive In →
           </a>
         </div>
