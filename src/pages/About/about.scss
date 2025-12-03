@@ -3,256 +3,691 @@
 :root {
   --bg: #ffffff;
   --muted: #6b7280;
-  --accent: #0ea5a4;
+  --accent: aquamarine;
   --accent-2: #06b6d4;
   --card: #f8fafc;
   --text: #0f172a;
   --radius: 14px;
   --gap: 24px;
+  --dot-color: aquamarine;
+  /* <-- THIS IS THE CHANGE */
 }
 
 /* MAIN SECTION */
-.about {
-  width: 100%;
-  height: 100vh;
-  padding: 80px 20px;
-  background: linear-gradient(180deg, #373632, #111132);
+.about-main {
   scroll-snap-align: center;
   scroll-snap-stop: always;
+  box-sizing: border-box;
 
-  /* CONTAINER */
-  &__container {
-    height: auto;
-    max-width: 1200px;
-    margin: 40px auto 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 0.8fr;
-    gap: var(--gap);
-    align-items: center;
+  .about {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #373632, #111132);
+    /* Changed to pure black for better visual match */
 
-    @include mobile {
+    /* CONTAINER */
+    &__container {
+      max-width: 1200px;
+      margin: 40px auto 0 auto;
+      /* Changed to flex for vertical layout of all sections */
       display: flex;
       flex-direction: column;
-      gap: 40px;
-      margin-top: 20px;
-    }
-  }
-
-  /* RIGHT CONTENT */
-  &__right {
-    padding: 0px 6px;
-
-    @include mobile {
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* TITLES */
-  &__title {
-    font-size: 50px;
-    margin-bottom: 6px;
-    color: #06b6d4;
-
-    @include mobile {
-      font-size: 32px;
-      line-height: 1.2;
-    }
-  }
-
-  &__subtitle {
-    margin-bottom: 16px;
-    font-size: 40px;
-    color: white;
-    font-weight: 600;
-
-    @include mobile {
-      font-size: 24px;
-      line-height: 1.3;
-    }
-  }
-
-  /* TEXT */
-  &__text {
-    font-size: 20px;
-    line-height: 1.6;
-    color: lightblue;
-    margin-bottom: 20px;
-
-    strong {
-      color: var(--accent);
-    }
-
-    @include mobile {
-      font-size: 16px;
-      line-height: 1.5;
-    }
-  }
-
-  /* STATS */
-  &__stats {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 22px;
-
-    @include mobile {
-      gap: 8px;
-      justify-content: space-between;
-    }
-  }
-
-  &__stat {
-    background: var(--card);
-    padding: 12px 16px;
-    border-radius: 12px;
-    min-width: 110px;
-    text-align: center;
-
-    @include mobile {
-      min-width: 95px;
-      padding: 8px 10px;
-    }
-
-    &-number {
-      font-size: 20px;
-      font-weight: 800;
-      color: #000;
+      gap: 80px;
+      align-items: center;
 
       @include mobile {
-        font-size: 16px;
+        gap: 40px;
+        margin-top: 20px;
       }
     }
 
-    &-label {
-      margin-top: 3px;
-      font-size: 12px;
-      color: var(--muted);
-
-      @include mobile {
-        font-size: 11px;
-      }
-    }
-  }
-
-  .head {
-    color: white;
-  }
-
-  /* SKILLS */
-  &__skills {
-    margin-bottom: 26px;
-    display: grid;
-    gap: 12px;
-
-    @include mobile {
-      gap: 10px;
-    }
-  }
-
-  &__skill {
-    &-head {
+    /* --- MISSION & VISION --- */
+    .mission-vision-container {
+      margin-top: 100px;
       display: flex;
+      margin-left: 400px;
       justify-content: space-between;
-      font-size: 14px;
-      margin-bottom: 6px;
-
-      @include mobile {
-        font-size: 13px;
-      }
-    }
-
-    &-percent {
-      color: var(--muted);
-
-      @include mobile {
-        font-size: 12px;
-      }
-    }
-
-    &-bar {
       width: 100%;
-      height: 8px;
-      background: #e6eef0;
-      border-radius: 999px;
+      max-width: 1000px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #e6e4e4;
+      /* Separator line */
 
       @include mobile {
-        height: 6px;
+        margin-top: 30px;
+        margin-left: 0px;
+        flex-direction: column;
+        gap: 40px;
+        border-bottom: none;
+      }
+
+      .mission,
+      .vision {
+        width: 45%;
+        color: white;
+        position: relative;
+        padding-left: 50px;
+
+        @include mobile {
+          width: 100%;
+          padding-left: 0;
+        }
+
+        .icon-wrap {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 30px;
+          height: 30px;
+
+          @include mobile {
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 10px;
+            position: relative;
+          }
+
+          .mission-icon,
+          .vision-icon {
+            width: 100%;
+            height: 100%;
+            color: var(--dot-color);
+            margin-left: 45px;
+
+            @include mobile {
+              margin-left: 0px;
+            }
+          }
+        }
+
+        h2 {
+          margin-left: 30px;
+          font-size: 24px;
+          font-weight: 600;
+          margin-bottom: 10px;
+
+          @include mobile {
+            margin-left: 0px;
+            text-align: center;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 1.6;
+          color: #aaa;
+
+          @include mobile {
+            text-align: center;
+            font-size: 13px;
+          }
+        }
+      }
+
+      .vision {
+        padding-left: 50px;
+
+        @include mobile {
+          padding-left: 0;
+        }
+
+        .icon-wrap {
+          left: 0;
+
+          @include mobile {
+            left: 50%;
+          }
+        }
       }
     }
 
-    &-fill {
-      height: 100%;
-      background: linear-gradient(90deg, var(--accent), var(--accent-2));
-      border-radius: 999px;
-    }
+    /* --- CORE VALUES --- */
+   .core-values-section {
+      scroll-snap-align: center;
+  scroll-snap-stop: always;
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+  max-width: 100%; /* Prevent overflow on small devices */
+
+  /* Mobile: reduce unused top spacing */
+  @include mobile {
+    margin-top: 20px;
+    padding: 0 10px; /* Add breathing room on small screens */
   }
 
-  /* BUTTONS */
-  &__actions {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-
-    @include mobile {
-      gap: 10px;
-    }
-  }
-
-  .btn {
-    padding: 10px 16px;
-    border-radius: 10px;
+  h3 {
+    font-size: 36px;
     font-weight: 700;
-    font-size: 14px;
-    cursor: pointer;
-    transition: 0.12s;
-  }
+    margin-bottom: 80px;
 
-  .btn--primary {
-    background: linear-gradient(90deg, var(--accent), var(--accent-2));
-    color: #fff;
-  }
-
-  /* LAST ROTATING CIRCLE — Visible on all devices */
-  .last {
-    margin-left: 380px;
-
+    /* Mobile: smoother scaling, prevents wrapping issues */
     @include mobile {
-      margin-left: 0;
-      display: flex;
-      justify-content: center;
-      width: 100%;
+      font-size: clamp(22px, 6vw, 28px);
+      margin-bottom: 40px;
+      line-height: 1.2;
+      word-break: break-word; /* avoids squeeze/wrap issues */
     }
+  }
+}
 
-    .about-last {
-      width: 200px;
-      height: 200px;
+
+    .core-values-diagram {
       position: relative;
+      width: 600px;
+      height: 500px;
+      margin: 0 auto;
+      
 
-      @include mobile {
-        width: 140px;
-        height: 140px;
-      }
-
-      .about-bg {
-        width: 100%;
-        height: 100%;
-        animation: rotateRound 10s linear infinite;
-      }
-
-      .about-arrow {
+      // Create the dotted circles
+      &::before,
+      &::after {
+        content: '';
         position: absolute;
-        width: 60px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        border: 1px dashed #e6e4e4;
+        /* Dotted line */
+        border-radius: 50%;
+        pointer-events: none;
+        box-sizing: border-box;
+      }
+
+      &::before {
+        width: 400px;
+        height: 400px;
 
         @include mobile {
-          width: 40px;
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      &::after {
+        width: 600px;
+        height: 600px;
+
+        @include mobile {
+          width: 350px;
+          height: 350px;
+        }
+      }
+
+      @include mobile {
+        width: 100%;
+        height: 400px;
+      }
+    }
+
+    .center-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 100px;
+      font-weight: 900;
+      color: var(--dot-color);
+      /* Red color for the D */
+      z-index: 10;
+      line-height: 1;
+
+      @include mobile {
+        font-size: 60px;
+      }
+    }
+
+    .value-point {
+      position: absolute;
+      width: 150px;
+      /* Fixed width for text container */
+      color: white;
+      text-align: center;
+
+      p {
+        font-size: 14px;
+        line-height: 1.4;
+
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+
+      .value-icon {
+        width: 40px;
+        height: 40px;
+        background: #333;
+        /* Background color for the icon circle */
+        border: 1px solid var(--dot-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 10px auto;
+
+        i {
+          font-size: 20px;
+          color: white;
+        }
+
+        @include mobile {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    // Position Points (Adjust based on diagram size)
+    .value-point-top {
+      margin-top: -40px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      p {
+        font-size: 10px;
+        font-weight: bold;
+
+        @include mobile {
+          font-size: 8px;
+        }
+      }
+
+      strong {
+        font-weight: 800;
+        color: aquamarine; // or any color you want
+      }
+
+      @include mobile {
+        margin-top: 0px;
+        top: 40px;
+      }
+    }
+
+    .value-point-left {
+      margin-left: -12px;
+      top: 30%;
+      left: 0;
+      transform: translateY(-50%);
+
+      p {
+        font-size: 10px;
+        font-weight: bold;
+
+        @include mobile {
+          font-size: 8px;
+        }
+      }
+
+      strong {
+        font-weight: 800;
+        color: aquamarine; // or any color you want
+      }
+
+      @include mobile {
+        margin-left: 0px;
+        top: 40%;
+        left: -30px;
+      }
+    }
+
+    .value-point-right {
+      margin-right: -12px;
+      top: 30%;
+      right: 0;
+      transform: translateY(-50%);
+
+      p {
+        font-size: 10px;
+        font-weight: bold;
+
+        @include mobile {
+          font-size: 8px;
+        }
+      }
+
+      strong {
+        font-weight: 800;
+        color: aquamarine; // or any color you want
+      }
+
+      @include mobile {
+        margin-top: 120px;
+        top: 10%;
+        right: -14px;
+      }
+    }
+
+    .value-point-right-bottom {
+      margin-right: 40px;
+      top: 80%;
+      right: 0;
+      transform: translateY(-50%);
+
+      p {
+        font-size: 10px;
+        font-weight: bold;
+
+        @include mobile {
+          font-size: 8px;
+        }
+      }
+
+      strong {
+        font-weight: 800;
+        color: aquamarine; // or any color you want
+      }
+
+      @include mobile {
+        margin-top: 120px;
+        top: 40%;
+        right: -40px;
+      }
+    }
+
+    .value-point-left-bottom {
+      margin-left: 35px;
+      top: 80%;
+      left: 0;
+      transform: translateY(-50%);
+
+      p {
+        font-size: 10px;
+        font-weight: bold;
+
+        @include mobile {
+          font-size: 8px;
+        }
+      }
+
+      strong {
+        font-weight: 800;
+        color: aquamarine; // or any color you want
+      }
+
+      @include mobile {
+        margin-left: 120px;
+        top: 70%;
+        left: -35%;
+      }
+    }
+
+    /* --- EXISTING STYLES (Adjusted for flex layout) --- */
+
+    /* RIGHT CONTENT */
+    &__right {
+      width: 100%;
+      /* Make it full width since the container is flex-column now */
+      max-width: 800px;
+      /* Limit width for readability */
+      padding: 0px 6px;
+
+      @include mobile {
+        text-align: left;
+      }
+    }
+
+    /* TITLES */
+    &__title {
+      font-size: 50px;
+      margin-bottom: 6px;
+      color: aquamarine;
+
+      @include mobile {
+        font-size: 32px;
+        line-height: 1.2;
+      }
+    }
+
+    &__subtitle {
+      margin-bottom: 16px;
+      font-size: 40px;
+      color: white;
+      font-weight: 600;
+
+      @include mobile {
+        font-size: 24px;
+        line-height: 1.3;
+      }
+    }
+
+    /* TEXT */
+    &__text {
+      font-size: 20px;
+      line-height: 1.6;
+      color: lightblue;
+      margin-bottom: 20px;
+
+      strong {
+        color: var(--accent);
+      }
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+
+    /* STATS */
+    &__stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 22px;
+
+      @include mobile {
+        gap: 8px;
+        justify-content: space-between;
+      }
+    }
+
+    &__stat {
+      background: var(--card);
+      padding: 12px 16px;
+      border-radius: 12px;
+      min-width: 110px;
+      text-align: center;
+
+      @include mobile {
+        min-width: 95px;
+        padding: 8px 10px;
+      }
+
+      &-number {
+        font-size: 20px;
+        font-weight: 800;
+        color: #000;
+
+        @include mobile {
+          font-size: 16px;
+        }
+      }
+
+      &-label {
+        margin-top: 3px;
+        font-size: 12px;
+        color: var(--muted);
+
+        @include mobile {
+          font-size: 11px;
+        }
+      }
+    }
+
+    .head {
+      color: white;
+    }
+
+    /* SKILLS */
+    &__skills {
+      margin-bottom: 26px;
+      display: grid;
+      gap: 12px;
+
+      @include mobile {
+        gap: 10px;
+      }
+    }
+
+    &__skill {
+      &-head {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        margin-bottom: 6px;
+
+        @include mobile {
+          font-size: 13px;
+        }
+      }
+
+      &-percent {
+        color: var(--muted);
+
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+
+      &-bar {
+        width: 100%;
+        height: 8px;
+        background: #e6eef0;
+        border-radius: 999px;
+
+        @include mobile {
+          height: 6px;
+        }
+      }
+
+      &-fill {
+        height: 100%;
+        background: linear-gradient(90deg, var(--accent), var(--accent-2));
+        border-radius: 999px;
+      }
+    }
+
+    /* BUTTONS */
+    &__actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+
+      @include mobile {
+        gap: 10px;
+      }
+    }
+
+    .btn {
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.12s;
+    }
+
+    .btn--primary {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      color: #fff;
+    }
+
+    /* LAST ROTATING CIRCLE — Visible on all devices */
+    .last {
+      margin-left: 0;
+      /* Centering for new flex-column layout */
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      .about-last {
+        width: 200px;
+        height: 200px;
+        position: relative;
+
+        @include mobile {
+          width: 140px;
+          height: 140px;
+        }
+
+        .about-bg {
+          width: 100%;
+          height: 100%;
+          animation: rotateRound 10s linear infinite;
+        }
+
+        .about-arrow {
+          background: #000;
+          position: absolute;
+          width: 60px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: transform 0.3s ease-in-out;
+          background: linear-gradient(180deg, #373632, #111132);
+          ;
+
+          @include mobile {
+            width: 40px;
+          }
+        }
+
+        &:hover .about-arrow {
+          // This moves and slightly scales the arrow when the parent area is hovered
+          transform: translate(-50%, -50%) rotate(45deg);
         }
       }
     }
   }
+
+  .cta-section {
+    margin-top: 100px;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+    background: inherit;
+
+    .cta-logo img {
+      width: 90px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    .cta-description {
+      max-width: 550px;
+      margin: 15px auto 30px;
+      font-size: 18px;
+      opacity: 0.8;
+
+      span {
+        color: aquamarine;
+      }
+    }
+
+    .cta-btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background: #06b6d4;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.2s;
+
+      &:hover {
+        background: aquamarine;
+        color: black;
+      }
+    }
+  }
+
 }
 
 /* ROTATE ANIMATION */
@@ -260,6 +695,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

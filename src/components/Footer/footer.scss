@@ -1,6 +1,8 @@
 @import "../../app.scss";
 
 .footer-background {
+    scroll-snap-align: center;
+  scroll-snap-stop: always;
   background-color: #000;
   bottom: 0; /* Position it at the bottom of the screen */
   width: 100%; /* Make sure the footer takes up the full width */

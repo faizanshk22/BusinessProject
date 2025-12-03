@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import Map from '../Map/Map';
 import Navbar from '../navbar/Navbar';
 import { PopupButton } from "react-calendly";
+import Footer from "../../components/Footer/Footer";
+
 
 
 const variants = {
@@ -124,6 +126,7 @@ function GetStarted() {
        <div className='map'>
         <Map />
         </div>
+        <Footer />
     </div>
   );
 }
