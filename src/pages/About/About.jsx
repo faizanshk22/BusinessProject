@@ -3,6 +3,8 @@ import "./about.scss";
 import Navbar from "../../components/navbar/Navbar";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
+import { PopupButton } from "react-calendly";
+
 
 function About() {
   return (
@@ -256,9 +258,15 @@ function About() {
             talk strategy.</span>
           </p>
 
-          <a href="getstarted" className="cta-btn">
+          {/* <a href="getstarted" className="cta-btn">
             Let’s Dive In →
-          </a>
+          </a> */}
+            <PopupButton
+          url="https://calendly.com/faizanshk20/30min"
+          rootElement={document.getElementById("root")}
+          text=" Let’s Dive In →"
+          className="cta-btn"
+        />
         </div>
 
       </section>

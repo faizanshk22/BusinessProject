@@ -152,7 +152,7 @@ background: linear-gradient(180deg, #373632, #111132);
       transition: 0.3s ease;
 
       &:hover {
-        background: gray;
+        background: black;
       }
       @include mobile{
         margin-top: 0px;
