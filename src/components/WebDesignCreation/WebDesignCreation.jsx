@@ -8,8 +8,7 @@ function WebDesignCreation() {
         Our <span>Web Design</span> Process
       </h1>
       <p className="subtitle">
-        With our years of experience in web design and development, we have 
-        perfected our process to ensure that our clients are happy with the end result.
+Leveraging our extensive experience in web design and development, we’ve honed a process that ensures every client is delighted with the final outcome.
       </p>
 
       <div className="timeline">
@@ -20,10 +19,8 @@ function WebDesignCreation() {
           <div className="card">
             <h2>Discovery & Planning</h2>
             <p>
-              The first step in our web design process is discovery and planning.
-              During this phase, we will learn more about your company, your goals,
-              and your target audience. We will also start to plan out the structure
-              and design of your website.
+            The initial phase of our web design process is discovery and planning.
+In this stage, we dive deep into understanding your company, goals, and target audience. We also begin outlining the structure and design of your website.
             </p>
           </div>
         </div>
@@ -34,10 +31,8 @@ function WebDesignCreation() {
           <div className="card">
             <h2>Design</h2>
             <p>
-              After discovery and planning, we will start on the design of your website.
-              We will create a mockup of your home page and inner pages. We will also
-              work with you to choose a color scheme, fonts, and imagery that reflect
-              your brand.
+           Following the discovery and planning phase, we move on to designing your website.
+We’ll create mockups for your homepage and inner pages, and collaborate with you to select a color scheme, fonts, and visuals that truly represent your brand.
             </p>
           </div>
         </div>
@@ -48,9 +43,8 @@ function WebDesignCreation() {
           <div className="card">
             <h2>Development</h2>
             <p>
-              Once the design is approved, we will start on development. This is where
-              we will take the design and turn it into a functioning website. We will
-              also add all essential features required for your website.
+             Once the design is approved, we begin development.
+This stage transforms the design into a fully functional website, incorporating all the essential features your site needs.
             </p>
           </div>
         </div>
@@ -61,9 +55,7 @@ function WebDesignCreation() {
           <div className="card">
             <h2>Testing & Launch</h2>
             <p>
-              After development is complete, we will test your website to ensure
-              everything is working properly. After launch, we help promote your
-              website to your target audience.
+Once development is complete, we thoroughly test your website to ensure everything functions flawlessly. After launch, we assist in promoting your site to reach your target audience effectively.
             </p>
           </div>
         </div>
@@ -74,8 +66,7 @@ function WebDesignCreation() {
           <div className="card">
             <h2>Maintenance & Support</h2>
             <p>
-              After your website is launched, we provide ongoing maintenance and support.
-              We ensure your website stays up-to-date and help with any updates you need.
+After your website goes live, we offer continuous maintenance and support, ensuring it remains up-to-date and assisting with any updates or changes you require.
             </p>
           </div>
         </div>
@@ -85,8 +76,7 @@ function WebDesignCreation() {
       <div className="industries">
         <h2>Industries <span>We Serve</span></h2>
         <p className="description">
-          Digital Engage specializes in developing customized web designs for businesses operating on a local or national level. Our experts have years of experience developing unique website designs, allowing us to provide unmatched services for all kinds of businesses. You can rely on us for bespoke SEO Optimized websites that will help your business achieve its goals.
-        </p>
+ONSETS specializes in developing and delivering comprehensive IT solutions for businesses of all sizes. Our team of experts brings years of experience in creating tailored technology solutions, ensuring seamless implementation and maximum impact. You can rely on us for customized, high-performance IT services designed to help your business achieve its goals.        </p>
 
         <div className="industry-list">
           <ul>
