@@ -84,9 +84,9 @@ background: linear-gradient(180deg, #373632, #111132);
         
 
         @include mobile{
-            margin-top: -80px;
+            margin-top: -100px;
             margin-bottom: 60px;
-            padding: 90px;
+            padding: 50px;
             width: 100%;
           }
 
@@ -114,6 +114,7 @@ background: linear-gradient(180deg, #373632, #111132);
             font-weight: 500;
             @include mobile{
                 padding: 10px;
+                margin-top: -20px;
               }
                 &:hover {
     background: #014b97;
