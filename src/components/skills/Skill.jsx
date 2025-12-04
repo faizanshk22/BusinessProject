@@ -11,10 +11,9 @@ function Skill() {
 
         </div>
       <div className="skill__header">
-        <p className="skill__subtitle">PRICING PLAN</p>
+        <p className="skill__subtitle">Subscription Packages</p>
         <h1 className="skill__title">
-          Choose Our Flexible Pricing Plan <br /> For Customizing Software
-        </h1>
+Select Our Flexible <span> Pricing Plans </span> <br /> to Customize Your <span> Software Solutions</span>        </h1>
       </div>
 
       <div className="skill__cards">
