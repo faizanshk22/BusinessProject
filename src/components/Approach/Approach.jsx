@@ -22,8 +22,7 @@ function Approach() {
 
                     <h3>Clarify Objectives</h3>
                     <p>
-                        We'll meet to collaborate on understanding your requirements,
-                        defining your goals, and strategising for your success.
+                        We’ll work together to grasp your requirements, set clear objectives, and plan a strategy that drives your success.
                     </p>
                 </div>
 
@@ -39,8 +38,7 @@ function Approach() {
 
                     <h3>Meet Engineers</h3>
                     <p>
-                        We will save your time by efficiently connecting you with one
-                        of the most compatible talents from our family of experts.
+                       We save you time by quickly connecting you with the most compatible talent from our network of experts.
                     </p>
                 </div>
 
@@ -55,8 +53,7 @@ function Approach() {
                     />
                     <h3>7 Day Try Out</h3>
                     <p>
-                        Experience a 7-day trial before deciding because we believe
-                        successful allocations build long-term partnerships.
+    Enjoy a 7-day trial before committing, as we believe that successful placements lay the foundation for long-term partnerships.
                     </p>
                 </div>
                 {/* STEP 4 */}
@@ -69,8 +66,7 @@ function Approach() {
                         className="iconImage"
                     />                    <h3>Build Your Dream Team</h3>
                     <p>
-                        Embrace your chosen standout by adding them to your dream team &
-                        solidify a powerful partnership built for success.
+Welcome your selected standout into your dream team and forge a strong partnership designed for lasting success.
                     </p>
                 </div>
 
