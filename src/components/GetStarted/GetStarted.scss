@@ -142,10 +142,10 @@ background: linear-gradient(180deg, #373632, #111132);
       &:hover {
         background: black;
       }
-      @include mobile{
-        margin-top: 0px;
-        padding: 10px 20px;
-      }
+     @include mobile {
+  margin-top: 0px;
+  padding: 5px 10px; // reduced from 10px 20px
+}
     }
 .map{
   scroll-snap-align: center;
