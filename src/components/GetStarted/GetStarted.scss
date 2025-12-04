@@ -141,6 +141,8 @@ background: linear-gradient(180deg, #373632, #111132);
 
       &:hover {
         background: black;
+        color: aquamarine;
+
       }
      @include mobile {
   margin-top: 0px;

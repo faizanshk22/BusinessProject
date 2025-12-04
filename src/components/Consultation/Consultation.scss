@@ -94,6 +94,9 @@
         font-size: 28px;
         padding: 0 10px;
       }
+      span{
+        color: aquamarine;
+      }
     }
 
     .consultation__subtitle {
@@ -121,6 +124,8 @@
 
       &:hover {
         background: #000;
+              color: aquamarine;
+
       }
     }
   }

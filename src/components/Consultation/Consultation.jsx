@@ -7,11 +7,10 @@ function Consultation() {
     <div className="consultation">
       <div className="consultation__content">
 
-        <h1 className="consultation__title">Start Your Free Consultation</h1>
+        <h1 className="consultation__title">Start Your <span> Free Consultation </span></h1>
 
         <p className="consultation__subtitle">
-          The first step to reach your goal is a casual conversation with our expert consultants.
-        </p>
+The first progression toward achieving your goals is a friendly chat with our expert consultants.        </p>
 
         <p className="consultation__subtitle">
           Professional support is only a click away.
