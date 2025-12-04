@@ -14,18 +14,14 @@ function About() {
         <div className="about__container">
           {/* RIGHT - Content */}
           <div className="about__right">
-            <h1 className="about__title">Discover ONSETS:</h1>
-            <h2 className="about__subtitle">Your Premier Talent Partner</h2>
+            <h1 className="about__title">Explore ONSETS:</h1>
+            <h2 className="about__subtitle">Your Go-To Talent Partner</h2>
 
             <p className="about__text">
-              At ONSETS, we’re all about the people. From our talent, teams, to
-              partners: We believe the real magic lies in harnessing human
-              potential.
+            At ONSETS, everything starts with people. From our talent and teams to our partners, we believe the true magic comes from unlocking human potential.
               <strong>
                 {" "}
-                Winning, to us, means creating lasting relationships with our
-                partners. We want to run marathons with you, not just the
-                sprints
+             To us, winning means building lasting relationships with our partners. We’re here for the long run—marathons, not just sprints.
               </strong>
             </p>
 
@@ -140,10 +136,7 @@ function About() {
             </div>
             <h2>Our Mission</h2>
             <p>
-              Our mission is to enable the talent, cultivating a fertile ground
-              where professional growth and innovation bloom. Our aim is to
-              channel this reservoir of expertise into building success stories
-              for clients.
+          Our mission is to empower talent by creating an environment where growth and innovation thrive. We’re committed to transforming this expertise into meaningful success stories for our clients.
             </p>
           </div>
 
@@ -175,10 +168,7 @@ function About() {
             </div>
             <h2>Our Vision</h2>
             <p>
-              Our vision is a world where every company has access to a dream
-              team to accelerate their success. We provide a pain-free way to
-              source global talent, setting the stage for a lifetime of
-              innovation.
+              Our vision is a world where every company can access a dream team that accelerates success. We deliver a seamless way to source global talent, paving the way for long-term innovation.
             </p>
           </div>
         </div>
@@ -197,7 +187,7 @@ function About() {
                 <i className="fas fa-smile"></i>
               </div>
               <p>
-                <strong>Fun & Entertainment</strong> <br /> is not skipped
+                <strong>Joy & Entertainment</strong> <br /> as part of everything we do
               </p>
             </div>
 
@@ -206,8 +196,8 @@ function About() {
                 <i className="fas fa-users"></i>
               </div>
               <p>
-                Everyone is <br /> equally <br />
-                <strong>accountable</strong>
+                Everyone is <br /> sharing equal <br />
+                <strong>ownership</strong>
               </p>
             </div>
 
@@ -216,7 +206,7 @@ function About() {
                 <i className="fas fa-handshake"></i>
               </div>
               <p>
-                <strong>Honesty</strong> is <br /> our Guiding <br /> Principle
+                <strong>Integrity</strong> is <br /> our Guiding <br /> Principle
               </p>
             </div>
 
@@ -225,8 +215,8 @@ function About() {
                 <i className="fas fa-handshake"></i>
               </div>
               <p>
-                We show <br />
-                <strong>Empathy </strong> for <br /> each other
+                We act with<br />
+                <strong>Consideration </strong> toward <br /> each other
               </p>
             </div>
 
@@ -237,7 +227,7 @@ function About() {
               <p>
                 We believe in <br />
                 <strong>
-                  growing <br /> together
+                  succeeding <br /> together
                 </strong>
               </p>
             </div>
@@ -250,12 +240,10 @@ function About() {
             {/* <img src="/mnt/data/div.png" alt="DevDimensions Logo" /> */}
           </div>
 
-          <h1>Your turn to step up to the plate!</h1>
+          <h1>Your move—step up and own it!</h1>
 
           <p className="cta-description">
-            You’ve gotten to know the line-up behind <span>ONSETS</span>, now it's our
-            turn to learn about your game plan. <span>Join our team and let's huddle to
-            talk strategy.</span>
+            You’ve met the full roster behind <span>ONSETS</span> ——now let us in on your playbook. <span>Join us and let’s craft a winning strategy together.</span>
           </p>
 
           {/* <a href="getstarted" className="cta-btn">
