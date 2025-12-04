@@ -86,23 +86,9 @@ background: linear-gradient(180deg, #373632, #111132);
         @include mobile{
             margin-top: -80px;
             margin-bottom: 60px;
-            padding: 50px;
+            padding: 90px;
             width: 100%;
           }
-
-        // .phoneSvg{
-        //     stroke: orange;
-        //     position: absolute;
-        //     margin: auto;
-        //     z-index: -1;
-
-        //     @include mobile{
-        //      svg{ 
-        //       margin-top: 50px;
-        //       width: 250px;
-        //       height: 250px;}
-        //     }
-        // }
 
         form {
         display: flex;
