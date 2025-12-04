@@ -50,9 +50,9 @@ function Hero() {
           <motion.h2 variants={textVariants}>
            CUSTOM SOFTWARE DEVELOPMENT
           </motion.h2>
-          <motion.h3 variants={textVariants}>Expertise in Creating Software That Fits Your Needs</motion.h3>
-          <motion.p className='p1'>Specializing in bespoke software solutions, we ensure that every product we create </motion.p>
-                    <motion.p className='p2'> is tailored to your business requirements, delivering seamless integration and maximum performance</motion.p>
+          <motion.h3 variants={textVariants}>Expertly Crafting Software Tailored to Your Needs</motion.h3>
+          <motion.p className='p1'>Focusing on custom software solutions, we make sure every product we develop aligns </motion.p>
+                    <motion.p className='p2'> with your business needs — offering smooth integration and peak performance.</motion.p>
 
           <motion.div variants={textVariants} className="buttons">
             <a href={resume} download="resume">
@@ -67,7 +67,7 @@ function Hero() {
             </a> */}
             {/* <motion.button variants={textVariants}>Contact Me</motion.button> */}
           </motion.div>
-          <motion.img variants={textVariants} animate='scrollButton' src="/scroll.png" alt="" />
+          <motion.img variants={textVariants} animate='scrollButton' src="/scroll.png" alt="" className='scrollButton' />
         </motion.div>
       <Link to="/getstarted">   <div className="btn">
  GET STARTED
