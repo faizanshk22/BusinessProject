@@ -16,6 +16,9 @@
     font-weight: 700;
     margin-bottom: 10px;
     color: black;
+    span{
+      color: aquamarine;
+    }
 
     @include mobile {
       font-size: 32px;
@@ -61,6 +64,7 @@
       font-weight: 700;
       margin-bottom: 20px;
       line-height: 1.3;
+      color: #000;
 
       @include mobile {
         font-size: 24px;
@@ -107,7 +111,7 @@
     margin-bottom: 100px;
     border: 1px solid #e5e5e5;
         .item__title {
-         color: blue;
+         color: rgb(78, 78, 210);
         }
          .item__text {
         //   font-size: 15px;
@@ -123,12 +127,18 @@
     background: linear-gradient(135deg, #0d0d0d, #02385c, #310e8b);
     color: #fff;
   margin-top: 100px;
+   .card__title {
+      color: aquamarine;
+    }
     .card__description,
     .item__text {
       color: #b3afaf;
     }
     .card__description {
         color: #fff;
+    }
+    .card__subheading {
+        color: aquamarine;
     }
   }
   @include mobile{
@@ -167,7 +177,9 @@
       text-align: center;
       margin-bottom: 60px;
       line-height: 1.2;
-
+      span{
+        color: aquamarine;
+      }
       @include mobile {
         font-size: 32px;
       }

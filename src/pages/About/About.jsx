@@ -69,13 +69,13 @@ function About() {
 
               <div className="about__skill">
                 <div className="about__skill-head">
-                  <span className="head">CRM - SEO - Payment Integrations</span>
-                  <span className="about__skill-percent">95%</span>
+                  <span className="head">Cloud Computing - CRM - SEO - Payment Integrations</span>
+                  <span className="about__skill-percent">99%</span>
                 </div>
                 <div className="about__skill-bar">
                   <div
                     className="about__skill-fill"
-                    style={{ width: "95%" }}
+                    style={{ width: "99%" }}
                   />
                 </div>
               </div>

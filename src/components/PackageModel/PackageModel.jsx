@@ -15,48 +15,44 @@ function PackageModel() {
     <div className="packageModel">
 
       {/* Heading */}
-      <h1 className="packageModel__title">Tailored Partnership Models</h1>
+      <h1 className="packageModel__title">Customized <span>Partnership Models </span></h1>
       <p className="packageModel__subtitle">
-        Choose the Custom Solutions for Your Product Journey
+Opt for Tailored Solutions to Elevate Your Product Journey
       </p>
 
       <div className="packageModel__cards">
 
         {/* Card 1 */}
         <div className="packageModel__card leftCard">
-          <h2 className="card__title">Ideation Stage Partnership</h2>
+          <h2 className="card__title">Partnership for the Ideation Stage</h2>
 
           <p className="card__description">
-            This engagement model is tailored for founders who are at the ideation
-            stage and seek to kickstart their product development journey.
+This engagement model is designed for founders in the ideation stage who want to jumpstart their product development journey.
             <br /><br />
-            We collaborate closely with you to transform your vision into a tangible
-            product, leveraging our expertise to guide you through the entire process.
+We work hand-in-hand with you to turn your vision into a concrete product, using our expertise to guide you throughout the entire process.
           </p>
 
-          <h3 className="card__subheading">Choose this model to get:</h3>
+          <h3 className="card__subheading">Opt for this model to gain:
+</h3>
 
           <div className="card__items">
 
             <div className="card__item">
-              <h4 className="item__title">Concept Exploration</h4>
+              <h4 className="item__title">Idea Exploration</h4>
               <p className="item__text">
-                Discuss and refine your product concept to align with market needs.
-              </p>
+Collaborate to shape and refine your product concept, ensuring it aligns with market demands.              </p>
             </div>
 
             <div className="card__item">
-              <h4 className="item__title">Receive Estimate</h4>
+              <h4 className="item__title">Get a Project Estimate</h4>
               <p className="item__text">
-                Get a clear estimate of costs and project timelines.
-              </p>
+Obtain a transparent estimate of costs and project timelines.              </p>
             </div>
 
             <div className="card__item">
-              <h4 className="item__title">Initiate Development</h4>
+              <h4 className="item__title">Kickstart Development</h4>
               <p className="item__text">
-                Start the development process with confidence.
-              </p>
+Begin the development process with confidence.              </p>
             </div>
 
           </div>
@@ -107,32 +103,32 @@ function PackageModel() {
       {/* --------------------- Start of Services Section Code --------------------- */}
       <div className="servicesSection">
         <p className="servicesSection__miniTitle">WHAT WE DO</p>
-        <h2 className="servicesSection__mainTitle">Discover Our Best Service <br /> Provided From Expert</h2>
+        <h2 className="servicesSection__mainTitle">Discover Our <span>Best Service </span> <br /> Provided From <span>Expert</span></h2>
         
         <div className="servicesSection__items">
           
           <ServiceItem
             icon={<img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="Web Development Icon" />}
             title="Web Development"
-            description="Custom, responsive websites built with precision."
+            description="Precision-crafted, responsive custom websites."
           />
           
           <ServiceItem
             icon={<img src="https://img.icons8.com/?size=100&id=usI2qCoJsJmU&format=png&color=000000" alt="App Development Icon" />}
             title="App Development"
-            description="Tailored, high-performance apps for all platforms."
+            description="Custom, high-performance apps designed for every platform."
           />
           
           <ServiceItem
             icon={<img src="https://img.icons8.com/fluency/48/000000/chatbot.png" alt="AI/ML/ChatGPT Icon" />}
             title="AI/ML/ChatGPT"
-            description="Providing AI, ML, and ChatGPT solutions for business automation and data insights."
+            description="Delivering AI, ML, and ChatGPT solutions for business automation and data-driven insights."
           />
           
           <ServiceItem
             icon={<img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="Cloud Services Icon" />}
             title="Cloud Services"
-            description="Delivering Cloud Services for scalable, secure, and efficient business solutions."
+            description="Providing cloud services for scalable, secure, and efficient business solutions."
           />
         </div>
       </div>
