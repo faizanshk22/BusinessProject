@@ -95,51 +95,50 @@ import "./services.scss";
 function Services() {
   const data = [
     {
-      number: "01",
-      title: "Discovery",
+      number: "ONE",
+      title: "Exploring",
       items: [
-        "Identifying Startup Needs",
-        "Figure out the north star metric",
-        "Identify Growth Levers",
+       "Understanding Startup Requirements",
+"Define the North Star Metric",
+"Determine Key Growth Drivers",
       ],
     },
     {
-      number: "02",
+      number: "TWO",
       title: "Planning",
       items: [
-        "Map User Journey",
-        "Avoiding future rework with usability testing",
-        "Maximize Value Offerings",
-        "De-Risk Execution: Technical Feasibility",
+"Outline the User Journey",
+"Prevent Future Rework Through Usability Testing",
+"Enhance Value Delivery",
+"Reduce Execution Risks with Technical Feasibility Analysis",
       ],
     },
     {
-      number: "03",
+      number: "THREE",
       title: "Execution & Delivery",
       items: [
-        "Reliable and on time delivery",
-        "Optimized and Lean Execution",
-        "Infrastructure Setup and deployment",
+       "Consistent, On-Time Delivery",
+"Lean and Efficient Execution",
+"Infrastructure Setup and Deployment",
       ],
     },
     {
-      number: "04",
+      number: "FOUR",
       title: "Strategic Support",
       items: [
-        "Measure product usage and impact",
-        "Collecting User Feedback",
-        "Hacking Activation",
-        "New areas for monetization",
+      "Track Product Usage and Impact",
+"Gather User Feedback",
+"Boost Activation",
+"Explore New Monetization Opportunities",
       ],
     },
   ];
 
   return (
     <div className="services">
-      <h1>Our Secret Sauce For Your Success</h1>
+      <h1>Our Winning Formula Behind Your Success</h1>
       <p>
-        We’re your trusted partner in <span>overcoming challenges</span> with
-        tailored solutions.
+We’re your reliable partner in <span>tackling challenges</span> through customized solutions.
       </p>
 
       <div className="cards">
