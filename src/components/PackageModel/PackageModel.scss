@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #cfc9c9;
+   background: #fff9f9;
   text-align: center;
 
   .packageModel__title {
@@ -152,20 +152,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fff; // Assuming the service section has a white background
+    background: gray; // Assuming the service section has a white background
     width: 100%;
-    border-radius: 100px;
+    border-radius: 0px;
     margin-bottom: 100px;
 
     @include mobile{
-          border-radius: 50px;
+          border-radius: 0px;
     margin-bottom: 50px; 
     }
     
     .servicesSection__miniTitle {
       font-size: 14px;
       font-weight: 600;
-      color: #555;
+      color: #fff;
       margin-bottom: 10px;
       letter-spacing: 2px;
     }
@@ -221,7 +221,7 @@
 
         .serviceItem__description {
           font-size: 15px;
-          color: #555;
+          color: #fff;
           line-height: 1.6;
         }
       }
