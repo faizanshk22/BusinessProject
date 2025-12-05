@@ -123,12 +123,11 @@ height: 100vh;
       img {
         width: 50px;
       }
-    //    @include mobile{
-    //   img{
-    //     // display: none;
-        
-    //   }
-    // }
+       @include mobile{
+      img{
+        display: none;
+      }
+    }
     }
   }
 
