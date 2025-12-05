@@ -7,7 +7,6 @@ import Parallax from './components/parallax/Parallax';
 import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
-// import Cursor from './components/cursor/Cursor';
 // import About from './pages/About/About';
 import whatappLogo from './assets/wlogo.png';
 import Preloader from './components/loader/Preloader';
@@ -43,8 +42,6 @@ function App() {
           <div>
             <section id="Homepage">
               <Navbar />
-                    {/* <Cursor /> */}
-
               <Hero />
             </section>
             <section id="Services"><Parallax type="services" /></section>
