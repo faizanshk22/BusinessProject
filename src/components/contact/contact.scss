@@ -116,8 +116,11 @@
         color: rgb(244, 230, 230);
         text-decoration-thickness: 2px;
         font-weight: 100;
-        text-decoration: underline;
+        // text-decoration: underline;
         cursor: pointer;
+        &:hover{
+          transform: translateX(-1px);
+        }
         @include mobile{
         font-size: 16px;
         }

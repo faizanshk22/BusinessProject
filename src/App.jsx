@@ -50,6 +50,8 @@ function App() {
             <section id="Services"><Parallax type="services" /></section>
             <section id="Work-Service"><Services /></section>
             {/* <section id="Portfolio"><Parallax type="portfolio" /></section> */}
+             <div id="approach" >
+            <Approach /></div>
                   <div id="packageModel" >
    <PackageModel/> </div>
             {/* <Portfolio /> */}
@@ -59,8 +61,6 @@ function App() {
             <Consultation />
              <div id="webDesign" >
             <WebDesignCreation /></div>
-           <div id="approach" >
-            <Approach /></div>
               <Contact />
            <Footer />
             <section className='footer'>
