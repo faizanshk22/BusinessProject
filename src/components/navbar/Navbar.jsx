@@ -16,12 +16,11 @@ function Navbar() {
   <NavLink to="/getStarted" className="contact">Contact</NavLink>       
 
 </span>
-        <div className="social">
+        {/* <div className="social">
             <a href='https://wwww.facebook.com/ONSETSSoftwareCompany/' target="_blank" rel="noopener noreferrer"><img src="/facebook.png" alt="fb" /></a>
             <a href='https://www.instagram.com/onsetssoftwarecompany/' target="_blank" rel="noopener noreferrer"><img src="/instagram.png" alt="ig" /></a>
-            {/* <a href='https://github.com/faizanshk22' target="_blank" rel="noopener noreferrer"><img src="/github.png" alt="githubt" /></a> */}
             <a href='https://www.linkedin.com/company/onsets/' target="_blank" rel="noopener noreferrer"><img src="/linkedin.png" alt="db" /></a>
-        </div>
+        </div> */}
       </div>
     </div>
   )
