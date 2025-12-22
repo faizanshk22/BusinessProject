@@ -89,11 +89,13 @@
   .approach-img{
     margin-bottom: 80px;
     margin-top: -120px;
+    animation: rotateRound 10s linear infinite;
+
     // margin-right: 0px;
-    img{
-        height: 250px;
-        opacity: 0.5;
-    }
+    // img{
+    //     height: 250px;
+    //     opacity: 0.5;
+    // }
   }
 }
 
