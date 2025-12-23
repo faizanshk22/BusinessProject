@@ -91,6 +91,7 @@
 
 import React from "react";
 import "./services.scss";
+import Stats from "../Stats/Stats";
 
 function Services() {
   const data = [
@@ -160,6 +161,7 @@ We’re your reliable partner in <span>tackling challenges</span> through custom
           </div>
         ))}
       </div>
+      <Stats />
     </div>
   );
 }

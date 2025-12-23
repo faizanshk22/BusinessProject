@@ -1,0 +1,81 @@
+.stats {
+  margin-left: 1rem;
+  margin-top: 10vh;
+  padding: 0.5rem 0;
+
+  @media (min-width: 1280px) {
+    padding: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 80vw;
+    margin: 0 auto;
+
+    @media (min-width: 1280px) {
+      max-width: none;
+    }
+  }
+
+  &__card {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // gap: 0.75rem;
+    padding: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 999px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    width: 100%;
+
+    @media (min-width: 640px) {
+      max-width: 45%;
+    }
+
+    @media (min-width: 1024px) {
+      max-width: 30%;
+      justify-content: flex-start;
+      padding: 1rem;
+    }
+  }
+
+  &__number {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #000;
+    margin-left: 50px;
+
+    @media (min-width: 640px) {
+      font-size: 1.875rem;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 3rem;
+    }
+  }
+
+  &__text {
+    line-height: 1.2;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+
+    &.short {
+      max-width: 80px;
+    }
+
+    &.long {
+      max-width: 120px;
+    }
+
+    @media (min-width: 640px) {
+      font-size: 0.875rem;
+    }
+
+    @media (min-width: 1280px) {
+      font-size: 1rem;
+    }
+  }
+}
