@@ -44,6 +44,7 @@ function App() {
             <section id="Homepage">
               <Navbar />
               <Hero />
+              <Testimonials />
             </section>
             <section id="Services"><Parallax type="services" /></section>
             <section id="Work-Service"><Services /></section>
@@ -59,7 +60,7 @@ function App() {
             <Consultation />
              <div id="webDesign" >
             <WebDesignCreation /></div>
-            <Testimonials />
+            
               <Contact />
            <Footer />
             <section className='footer'>

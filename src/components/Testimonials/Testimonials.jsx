@@ -20,11 +20,18 @@ const Testimonials = () => {
     },
     {
       name: 'Ahmed Bhatti',
-      role: 'CTO',
+      role: 'Fintech Engineer',
       message:
         'The process was smooth from start to finish. They clearly understood our vision and executed it with creativity and precision. The team’s commitment and responsiveness truly stood out.',
       avatar: 'https://i.pravatar.cc/150?img=54',
     },
+    {
+  name: 'Finn Dave',
+  role: 'Chief Technology Officer',
+  message:
+    'From beginning to end, the team delivered flawlessly. They understood our goals perfectly and turned them into a creative, high-quality solution. Their dedication and prompt communication were exceptional.',
+  avatar: 'https://i.pravatar.cc/150?img=65',
+},
   ];
 
   return (
