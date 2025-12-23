@@ -18,6 +18,7 @@ import Approach from './components/Approach/Approach';
 import Footer from './components/Footer/Footer';
 import GetStarted from './components/GetStarted/GetStarted';
 import About from './pages/About/About';
+import Testimonials from './components/Testimonials/Testimonials';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -58,6 +59,7 @@ function App() {
             <Consultation />
              <div id="webDesign" >
             <WebDesignCreation /></div>
+            <Testimonials />
               <Contact />
            <Footer />
             <section className='footer'>
