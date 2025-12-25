@@ -106,6 +106,7 @@ function GetStarted() {
         </div>
 
         <div className="formContainer">
+          <p>*Only for Clients*</p>
           <form
             ref={formRef}
             onSubmit={sendEmail}
