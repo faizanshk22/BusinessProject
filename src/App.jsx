@@ -44,8 +44,8 @@ function App() {
             <section id="Homepage">
               <Navbar />
               <Hero />
-              <Testimonials />
             </section>
+            <Testimonials />
             <section id="Services"><Parallax type="services" /></section>
             <section id="Work-Service"><Services /></section>
             {/* <section id="Portfolio"><Parallax type="portfolio" /></section> */}
