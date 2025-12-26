@@ -124,6 +124,10 @@ function GetStarted() {
         </div>
        
       </div>
+      <div className='googleImg'>
+        <h1>Find us on google</h1>
+        <img  src="googleImg.png" alt="google details" />
+</div>
        <div className='map'>
         <Map />
         </div>

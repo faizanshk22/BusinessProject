@@ -152,10 +152,26 @@ p{
   padding: 8px 15px; // reduced from 10px 20px
 }
     }
+   .googleImg {
+    background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical */
+  align-items: center;     /* horizontal */
+  height: 100vh;           /* optional */
+  @include mobile{
+    display: none;
+  }
+}
+
+.googleImg h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 .map{
   scroll-snap-align: center;
   scroll-snap-stop: always;
-  margin-top: -60px;
+  margin-top: -100px;
 }
 // .closeIcon {
 //   position: absolute;
