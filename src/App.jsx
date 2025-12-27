@@ -9,6 +9,8 @@ import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
 // import About from './pages/About/About';
 import whatappLogo from './assets/wlogo.png';
+import linkedinLogo from './assets/linkedin.png';
+import google from './assets/google.png';
 import Preloader from './components/loader/Preloader';
 import PackageModel from './components/PackageModel/PackageModel';
 import Skill from './components/skills/Skill';
@@ -70,6 +72,24 @@ function App() {
         <Route path='/getstarted' element={<GetStarted />} />
       </Routes>
     </Router>
+       <div className="google-button">
+  <a
+    href='https://share.google/gf7PLlYoLAo5tBpbp'
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src={google} width="60" alt="google" />
+  </a>
+</div>
+      <div className="linkedin-button">
+  <a
+    href='https://www.linkedin.com/company/onsets/'
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img src={linkedinLogo} width="60" alt="LinkedIn" />
+  </a>
+</div>
     <div className="whatsapp-button">
   <a href="https://wa.me/923054595364?text=Hello How can I help you?" target="_blank">
     <img src={whatappLogo} width="60" alt="w/a" />
