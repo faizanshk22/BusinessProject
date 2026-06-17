@@ -82,13 +82,13 @@ function App() {
   </a>
 </div>
       <div className="linkedin-button">
-  <a
+  {/* <a
     href='https://www.linkedin.com/company/onsets/'
     target="_blank"
     rel="noopener noreferrer"
   >
     <img src={linkedinLogo} width="60" alt="LinkedIn" />
-  </a>
+  </a> */}
 </div>
     <div className="whatsapp-button">
   <a href="https://wa.me/923054595364?text=Hello How can I help you?" target="_blank">
