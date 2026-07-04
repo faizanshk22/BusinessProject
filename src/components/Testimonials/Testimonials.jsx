@@ -1,6 +1,7 @@
 import React from 'react';
 import './Testimonials.scss';
 import { FaStar, FaQuoteLeft } from 'react-icons/fa';
+// import VideoSection from "../VideoSection/VideoSection";
 
 const Testimonials = () => {
   const testimonials = [
@@ -19,7 +20,7 @@ const Testimonials = () => {
       avatar: 'https://i.pravatar.cc/150?img=32',
     },
     {
-      name: 'Ahmed Bhatti',
+      name: 'Mohammad Ahmed',
       role: 'Fintech Engineer',
       message:
         'The process was smooth from start to finish. They clearly understood our vision and executed it with creativity and precision. The team’s commitment and responsiveness truly stood out.',
@@ -67,6 +68,8 @@ const Testimonials = () => {
           ))}
         </div>
       </div>
+      {/* <VideoSection /> */}
+
     </section>
   );
 };

@@ -21,6 +21,7 @@ import Footer from './components/Footer/Footer';
 import GetStarted from './components/GetStarted/GetStarted';
 import About from './pages/About/About';
 import Testimonials from './components/Testimonials/Testimonials';
+import VideoSection from "./components/VideoSection/VideoSection";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -48,6 +49,7 @@ function App() {
               <Hero />
             </section>
             <Testimonials />
+            <VideoSection/>
             <section id="Services"><Parallax type="services" /></section>
             <section id="Work-Service"><Services /></section>
             {/* <section id="Portfolio"><Parallax type="portfolio" /></section> */}
