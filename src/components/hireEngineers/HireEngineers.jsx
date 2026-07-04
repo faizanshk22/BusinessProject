@@ -9,6 +9,9 @@ import StepTwo from "./StepTwo";
 import StepThree from "./StepThree";
 import Navbar from "../navbar/Navbar";
 
+import Footer from "../../components/Footer/Footer";
+
+
 export default function HireEngineers() {
   const [step, setStep] = useState(1);
 const [loading, setLoading] = useState(false);
@@ -307,6 +310,7 @@ const submitForm = async () => {
   )}
       </div>
     </section>
+    <Footer/>
     </>
   );
 }

@@ -8,7 +8,7 @@ const StepOne = ({
       <div className="grid">
 
         <div className="field">
-          <label>Full Name</label>
+          <label>Full Name*</label>
 
           <input
             type="text"
@@ -19,7 +19,7 @@ const StepOne = ({
         </div>
 
         <div className="field">
-          <label>Company / Organization</label>
+          <label>Company / Organization*</label>
 
           <input
             type="text"
@@ -30,7 +30,7 @@ const StepOne = ({
         </div>
 
         <div className="field">
-          <label>Email Address</label>
+          <label>Email Address*</label>
 
           <input
             type="email"
@@ -41,7 +41,7 @@ const StepOne = ({
         </div>
 
         <div className="field">
-          <label>Contact Number</label>
+          <label>Contact Number*</label>
 
           <input
             type="text"
