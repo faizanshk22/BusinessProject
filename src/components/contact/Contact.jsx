@@ -68,7 +68,7 @@ function Contact() {
         </div>
         <div className="item" variants={variants}>
         <img width="30" height="30" src="https://img.icons8.com/?size=100&id=44034&format=png&color=000000" alt="Phone"/>
-          <p>+92 321 5547204</p>
+          <p>+92 321 5547204, +92 305 4595364</p>
         </div>
       </div>
       <div className="formContainer">

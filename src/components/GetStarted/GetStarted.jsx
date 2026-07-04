@@ -92,7 +92,7 @@ function GetStarted() {
               src="https://img.icons8.com/?size=100&id=44034&format=png&color=000000"
               alt="Phone"
             />
-            <p>+92 321 5547204</p>
+            <p>+92 321 5547204, +92 305 4595364</p>
           </div>
           <div>
              <PopupButton
