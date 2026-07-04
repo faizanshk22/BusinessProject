@@ -10,7 +10,7 @@ const StepThree = ({
     <>
       <div className="selectionSection">
 
-        <h3>How many engineers?</h3>
+        <h3>No. of engineers?</h3>
 
         <div className="options">
 
@@ -41,7 +41,7 @@ const StepThree = ({
 
       <div className="selectionSection">
 
-        <h3>Hire Type</h3>
+        <h3>Specify the hire type</h3>
 
         <div className="options">
 
@@ -72,7 +72,7 @@ const StepThree = ({
 
       <div className="selectionSection">
 
-        <h3>Timeline</h3>
+        <h3>Required Timeline</h3>
 
         <div className="options">
 
@@ -107,7 +107,7 @@ const StepThree = ({
 
       <div className="field full">
 
-        <label>Additional Notes</label>
+        <label>Careful Additional Notes</label>
 
         <textarea
           rows="5"

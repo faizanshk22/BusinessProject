@@ -22,8 +22,7 @@ const StepTwo = ({
   return (
     <>
       <h2>
-        Are there any technologies you want to specify?
-      </h2>
+Do you have a preferred tech stack for this project?      </h2>
 
       <div className="technologyGrid">
 

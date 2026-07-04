@@ -7,6 +7,7 @@ import ProgressBar from "./ProgressBar";
 import StepOne from "./StepOne";
 import StepTwo from "./StepTwo";
 import StepThree from "./StepThree";
+import Navbar from "../navbar/Navbar";
 
 export default function HireEngineers() {
   const [step, setStep] = useState(1);
@@ -29,9 +30,54 @@ const [error, setError] = useState(false);
   // Navigation
   // ---------------------------
 
-  const nextStep = () => {
+ const nextStep = () => {
+  if (step === 1) {
+    if (!formData.fullName.trim()) {
+      alert("Please enter your full name.");
+      return;
+    }
+
+    if (!formData.company.trim()) {
+      alert("Please enter your company / organization.");
+      return;
+    }
+
+    if (!formData.email.trim()) {
+      alert("Please enter your email address.");
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(formData.email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    if (!formData.phone.trim()) {
+      alert("Please enter your contact number.");
+      return;
+    }
+
     if (step < 3) setStep((prev) => prev + 1);
-  };
+    return;
+  }
+
+  if (step === 2) {
+    if (formData.technologies.length === 0) {
+      alert("Please select at least one technology.");
+      return;
+    }
+
+    if (step < 3) setStep((prev) => prev + 1);
+    return;
+  }
+
+  if (step < 3) {
+    setStep((prev) => prev + 1);
+  }
+};
 
   const prevStep = () => {
     if (step > 1) setStep((prev) => prev - 1);
@@ -168,7 +214,10 @@ const submitForm = async () => {
 };
 
   return (
+    <>
+    <Navbar className="nv"/>
     <section className="hireEngineers">
+
       <div className="background-circle one"></div>
       <div className="background-circle two"></div>
 
@@ -180,12 +229,12 @@ const submitForm = async () => {
           transition={{ duration: 0.5 }}
         >
           <h1>
-            Let's <span>Collaborate.</span> We're All Ears!
+            Let's <span>Build Together.</span> Ideas Into Reality!
           </h1>
 
           <p>
-            Unlock the gateway to collaboration by sharing your project
-            details, goals and timelines.
+           Tell us what you're building, what success looks like, and when you'd like to launch. We'll take it from there.
+
           </p>
         </motion.div>
 
@@ -258,5 +307,6 @@ const submitForm = async () => {
   )}
       </div>
     </section>
+    </>
   );
 }
