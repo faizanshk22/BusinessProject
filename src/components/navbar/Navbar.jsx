@@ -12,7 +12,7 @@ function Navbar() {
         transition={{duration:0.5}}><a href='/'><img src='ONSETSLOGO.png' alt='ONSETS LOGO' /></a></motion.span>
        <span className='links'>   
 <Link to="/" className="home">Home</Link>
-  <NavLink to="/about" className="aboutLink">About Us</NavLink>
+  <NavLink to="/about" className="aboutLink">About</NavLink>
   <NavLink to="/getStarted" className="contact">Contact</NavLink>  
   <NavLink to="/engineers" className="home">Hire Engineers</NavLink>
 

@@ -77,7 +77,7 @@ function Hero() {
       BEST IT SOLUTIONS
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero1.png" alt="" />
+        <img src="/hero251.png" alt="" />
       </div>
     </div>
   );
