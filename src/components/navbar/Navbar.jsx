@@ -13,7 +13,10 @@ function Navbar() {
        <span className='links'>   
 <Link to="/" className="home">Home</Link>
   <NavLink to="/about" className="aboutLink">About Us</NavLink>
-  <NavLink to="/getStarted" className="contact">Contact</NavLink>       
+  <NavLink to="/getStarted" className="contact">Contact</NavLink>  
+  <Link to="/engineers" className="home">Hire Engineers</Link>
+
+
 
 </span>
         <div className="social">

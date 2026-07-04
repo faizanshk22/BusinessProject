@@ -1,0 +1,843 @@
+@import "../../app.scss";
+
+.hireEngineers {
+  width: 100%;
+  min-height: 100vh;
+  background: #060606;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  @include mobile {
+    padding: 70px 15px;
+  }
+
+  .background-circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 48, 77, .12);
+    pointer-events: none;
+  }
+
+  .one {
+    width: 600px;
+    height: 600px;
+    left: -220px;
+    top: 80px;
+  }
+
+  .two {
+    width: 500px;
+    height: 500px;
+    right: -180px;
+    bottom: -60px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* ==========================
+        Heading
+  ========================== */
+
+  .heading {
+    text-align: center;
+    margin-bottom: 70px;
+
+    h1 {
+      font-size: 60px;
+      font-weight: 700;
+      margin-bottom: 20px;
+
+      span {
+        color: #ff304d;
+      }
+
+      @include mobile {
+        font-size: 36px;
+        line-height: 1.3;
+      }
+    }
+
+    p {
+      max-width: 720px;
+      margin: auto;
+      color: #bfbfbf;
+      line-height: 1.8;
+      font-size: 17px;
+
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+  }
+
+  /* ==========================
+      Progress Bar
+  ========================== */
+
+  .progressBar {
+    width: 100%;
+    height: 4px;
+    background: #2c2c2c;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 60px;
+
+    .progress {
+      position: absolute;
+      height: 100%;
+      border-radius: 20px;
+      background: linear-gradient(90deg, #ff2147, #ff546a);
+      transition: .4s ease;
+    }
+
+    .circle {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: #1c1c1c;
+      border: 2px solid #353535;
+
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-weight: 600;
+      transition: .35s;
+
+      &:nth-child(2) {
+        left: 0%;
+      }
+
+      &:nth-child(3) {
+        left: 50%;
+      }
+
+      &:nth-child(4) {
+        left: 100%;
+      }
+
+      &.active {
+        background: #ff304d;
+        border-color: #ff304d;
+      }
+
+      @include mobile {
+        width: 42px;
+        height: 42px;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -25px;
+    margin-bottom: 45px;
+
+    span {
+      width: 120px;
+      text-align: center;
+      color: #bfbfbf;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    @include mobile {
+      span {
+        width: auto;
+        font-size: 11px;
+      }
+    }
+  }  /* ==========================
+          Main Card
+  ========================== */
+
+  .card {
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(20, 20, 20, 0.82);
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 24px;
+
+    padding: 50px;
+
+    min-height: 550px;
+
+    box-shadow:
+      0 25px 80px rgba(0,0,0,.45);
+
+    transition: .35s ease;
+
+    @include mobile {
+      padding: 25px;
+      min-height: auto;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      width: 320px;
+      height: 320px;
+
+      right: -120px;
+      top: -120px;
+
+      border-radius: 50%;
+
+      background: rgba(255,48,77,.08);
+
+      filter: blur(120px);
+
+      pointer-events: none;
+    }
+
+    h2 {
+      font-size: 34px;
+      margin-bottom: 35px;
+      font-weight: 600;
+
+      @include mobile {
+        font-size: 24px;
+        line-height: 1.4;
+      }
+    }
+
+    h3 {
+      margin-bottom: 18px;
+      font-size: 28px;
+      font-weight: 500;
+
+      @include mobile {
+        font-size: 22px;
+      }
+    }
+  }
+
+  /* ==========================
+          Form Grid
+  ========================== */
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 28px;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 12px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    input,
+    textarea {
+
+      width: 100%;
+
+      background: rgba(40,40,40,.95);
+
+      border: 1px solid #454545;
+
+      border-radius: 12px;
+
+      padding: 18px;
+
+      color: white;
+
+      font-size: 16px;
+
+      outline: none;
+
+      transition: .35s;
+
+      &::placeholder{
+        color:#8a8a8a;
+      }
+
+      &:focus{
+
+        border-color:#ff304d;
+
+        box-shadow:0 0 18px rgba(255,48,77,.25);
+
+      }
+
+    }
+
+    textarea{
+
+      resize:none;
+
+      min-height:170px;
+
+    }
+  }
+
+  .full{
+    margin-top:35px;
+  }
+
+  /* ==========================
+            Buttons
+  ========================== */
+
+  .buttons{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-top:50px;
+
+    gap:20px;
+
+    &.end{
+      justify-content:flex-end;
+    }
+
+    @include mobile{
+
+      flex-direction:column;
+
+    }
+
+    button{
+
+      min-width:170px;
+
+      border:none;
+
+      cursor:pointer;
+
+      padding:17px 34px;
+
+      border-radius:12px;
+
+      font-size:17px;
+
+      font-weight:600;
+
+      color:white;
+
+      background:linear-gradient(
+      135deg,
+      #ff2147,
+      #ff546a
+      );
+
+      transition:.35s;
+
+      &:hover{
+
+        transform:translateY(-4px);
+
+        box-shadow:
+        0 15px 35px rgba(255,48,77,.35);
+
+      }
+
+      @include mobile{
+
+        width:100%;
+
+      }
+
+    }
+
+    .secondary{
+
+      background:#2d2d2d;
+
+      &:hover{
+
+        background:#444;
+
+        box-shadow:none;
+
+      }
+
+    }
+
+  }  /* ==========================
+      Technology Selection
+  ========================== */
+
+  .technologyGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    margin-top: 35px;
+
+    @media (max-width: 1100px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+.tech {
+  height: 135px;
+  background: #202020;
+  border: 1px solid #3d3d3d;
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+  padding: 15px;
+
+  cursor: pointer;
+  transition: .35s;
+
+  .icon {
+    color: #ff304d;
+    transition: .35s;
+  }
+
+  span {
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: #ff304d;
+    box-shadow: 0 12px 25px rgba(255, 48, 77, .18);
+  }
+
+  &.selected {
+    background: linear-gradient(
+      135deg,
+      rgba(255,48,77,.25),
+      rgba(255,48,77,.12)
+    );
+
+    border-color: #ff304d;
+
+    box-shadow: 0 0 20px rgba(255,48,77,.35);
+
+    .icon {
+      transform: scale(1.15);
+    }
+  }
+
+  @include mobile {
+    height: 100px;
+
+    span {
+      font-size: 13px;
+    }
+  }
+}
+  /* ==========================
+        Step 3 Sections
+  ========================== */
+
+  .selectionSection {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    @include mobile {
+      margin-bottom: 30px;
+
+      h3 {
+        font-size: 20px;
+      }
+    }
+  }
+
+  /* ==========================
+          Option Buttons
+  ========================== */
+
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .option {
+
+    min-width: 180px;
+    height: 55px;
+
+    background: #242424;
+
+    border: 1px solid #3d3d3d;
+
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    user-select: none;
+
+    &:hover {
+      border-color: #ff304d;
+      transform: translateY(-3px);
+    }
+
+    &.selected {
+
+      background: linear-gradient(
+        135deg,
+        #ff2147,
+        #ff596d
+      );
+
+      border-color: transparent;
+
+      box-shadow: 0 12px 25px rgba(255,48,77,.3);
+
+    }
+
+    @include mobile {
+      width: 100%;
+      min-width: 100%;
+    }
+
+  }
+
+  /* ==========================
+          Notes Field
+  ========================== */
+
+  textarea {
+    margin-top: 5px;
+  }
+
+  /* ==========================
+      Scrollbar Styling
+  ========================== */
+
+  textarea::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  textarea::-webkit-scrollbar-track {
+    background: #1e1e1e;
+  }
+
+  textarea::-webkit-scrollbar-thumb {
+    background: #ff304d;
+    border-radius: 50px;
+  }
+
+  /* ==========================
+      Nice Focus Animation
+  ========================== */
+
+  input,
+  textarea {
+    &:focus {
+      transform: scale(1.01);
+    }
+  }
+
+  /* ==========================
+      Card Animation
+  ========================== */
+
+  .card {
+    animation: fadeCard .35s ease;
+  }
+
+  @keyframes fadeCard {
+
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+  }
+
+  /* ==========================
+      Mobile Tweaks
+  ========================== */
+
+  @include mobile {
+
+    .card {
+      border-radius: 18px;
+    }
+
+    .buttons {
+      margin-top: 35px;
+    }
+
+    .field {
+
+      label {
+        font-size: 16px;
+      }
+
+      input,
+      textarea {
+        padding: 15px;
+        font-size: 15px;
+      }
+
+    }
+
+  }
+    /* ======================================
+          Decorative Background Effects
+  ======================================= */
+
+  .background-circle {
+    animation: floatCircle 12s ease-in-out infinite;
+  }
+
+  .one {
+    animation-delay: 0s;
+  }
+
+  .two {
+    animation-delay: 4s;
+  }
+
+  @keyframes floatCircle {
+    0% {
+      transform: translateY(0px) scale(1);
+    }
+
+    50% {
+      transform: translateY(-35px) scale(1.04);
+    }
+
+    100% {
+      transform: translateY(0px) scale(1);
+    }
+  }
+
+  /* ======================================
+            Hover Effects
+  ======================================= */
+
+  .card:hover {
+    border-color: rgba(255, 48, 77, 0.18);
+
+    box-shadow:
+      0 30px 80px rgba(0, 0, 0, .45),
+      0 0 35px rgba(255, 48, 77, .08);
+  }
+
+  /* ======================================
+          Smooth Transition
+  ======================================= */
+
+  * {
+    transition:
+      background .3s ease,
+      color .3s ease,
+      border-color .3s ease,
+      transform .3s ease,
+      box-shadow .3s ease;
+  }
+
+  /* ======================================
+          Desktop Improvements
+  ======================================= */
+
+  @media (min-width: 1400px) {
+
+    .container {
+      max-width: 1280px;
+    }
+
+    .card {
+      padding: 60px;
+    }
+
+    .heading h1 {
+      font-size: 66px;
+    }
+
+    .heading p {
+      font-size: 18px;
+    }
+
+    .technologyGrid {
+      gap: 22px;
+    }
+
+    .tech {
+      height: 100px;
+      font-size: 17px;
+    }
+
+  }
+
+  /* ======================================
+            Tablet
+  ======================================= */
+
+  @media (max-width: 900px) {
+
+    .heading {
+      margin-bottom: 50px;
+    }
+
+    .progressBar {
+      margin-bottom: 45px;
+    }
+
+    .labels {
+      margin-bottom: 35px;
+    }
+
+    .card {
+      padding: 30px;
+    }
+
+  }
+
+  /* ======================================
+            Small Phones
+  ======================================= */
+
+  @media (max-width: 480px) {
+
+    padding: 60px 12px;
+
+    .heading {
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+    }
+
+    .card {
+      padding: 18px;
+      border-radius: 16px;
+    }
+
+    .progressBar {
+
+      .circle {
+        width: 36px;
+        height: 36px;
+        font-size: 11px;
+      }
+
+    }
+
+    .buttons button {
+      font-size: 15px;
+      padding: 15px;
+    }
+
+    .tech {
+      height: 65px;
+      border-radius: 10px;
+      font-size: 13px;
+    }
+
+    .option {
+      height: 48px;
+      font-size: 14px;
+    }
+
+  }
+
+  /* ======================================
+            Scrollbar
+  ======================================= */
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #0f0f0f;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #ff304d;
+    border-radius: 50px;
+  }
+
+  /* ======================================
+            Selection Disable
+  ======================================= */
+
+  button,
+  .tech,
+  .option {
+    user-select: none;
+  }
+
+  /* ======================================
+            End
+  ======================================= */
+
+}
