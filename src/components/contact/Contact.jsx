@@ -82,11 +82,11 @@ function Contact() {
         </form> */}
         <div className='quickLinks'>
          <h2>  Quick Links</h2>
-          <h1 className='one' onClick={() => scrollToSection("book-consultation")}>Check Pricing & Booking</h1>
-          <h1 className='two' onClick={() => scrollToSection("packageModel")}>Our Models & Services</h1>
-          <h1 className='three' onClick={() => scrollToSection("webDesign")}>Design Process</h1>
-          <h1 className='four' onClick={() => scrollToSection("approach")}>Our Approach</h1>
-          <h1 className='five' onClick={() => scrollToSection("Homepage")}>Home</h1>
+          <h1 className='one' onClick={() => scrollToSection("book-consultation")}><span>→</span>Check Pricing & Booking</h1>
+          <h1 className='two' onClick={() => scrollToSection("packageModel")}><span>→</span>Our Models & Services</h1>
+          <h1 className='three' onClick={() => scrollToSection("webDesign")}><span>→</span>Design Process</h1>
+          <h1 className='four' onClick={() => scrollToSection("approach")}><span>→</span>Our Approach</h1>
+          <h1 className='five' onClick={() => scrollToSection("Homepage")}><span>→</span>Home</h1>
         </div>
       </div>
     </div>

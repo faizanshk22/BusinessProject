@@ -71,7 +71,7 @@ function GetStarted() {
         whileInView="animate"
       >
         <div className="textContainer" variants={variants}>
-          <h1 variants={variants}>Let's Talk!</h1>
+          <h1 variants={variants}>Let's <strong className='strong'>Talk!</strong></h1>
 
           <div className="item" variants={variants}>
             <img width="30" height="30" src="email.png" alt="Email" />
@@ -106,8 +106,9 @@ function GetStarted() {
         </div>
 
         <div className="formContainer">
-          <p>*Only for Clients*</p>
-          <form
+ <div className="formHeading">
+    <p>*Only for Clients*</p>
+  </div>          <form
             ref={formRef}
             onSubmit={sendEmail}
             initial={{ opacity: 0 }}

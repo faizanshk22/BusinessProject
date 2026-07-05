@@ -35,14 +35,49 @@ background: linear-gradient(180deg, #373632, #111132);
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 10px;
 
-        @include mobile{
-           gap: 10px;
-           text-align: center;
-           align-items: center;
-           margin-top: 75px;
-          }
+     @include mobile {
+  width: 100%;
+  margin-top: 60px;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+
+  h1 {
+    font-size: 58px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  .item {
+    width: 100%;
+    max-width: 340px;
+    padding: 14px 16px;
+    gap: 12px;
+    border-radius: 14px;
+
+    p,
+    span {
+      font-size: 14px;
+      line-height: 1.6;
+      word-break: break-word;
+    }
+  }
+
+  .item img {
+    width: 24px;
+    height: 24px;
+    margin-left: 0;
+  }
+
+  .item2 {
+    margin: 0;
+  }
+}
+.strong{
+  color: aquamarine;
+}
           .item {
             display: flex;
             align-items: center; /* Centers items vertically */
@@ -78,57 +113,101 @@ background: linear-gradient(180deg, #373632, #111132);
             font-weight: 300;
         }
     }
-    .formContainer{
-        flex: 1;
-        position: relative;
-        
+    .formContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
-        @include mobile{
-            margin-top: -90px;
-            margin-bottom: 60px;
-            padding: 50px;
-            width: 100%;
-          }
-p{
-  font-weight: bold;
-  margin-bottom: 10px;
+  @include mobile {
+  width: 100%;
+  margin-top: 12px;
+  padding: 0 20px;
+  align-items: center;
 }
-        form {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
 
-        input,textarea{
-            padding: 20px;
-            background-color: transparent;
-            border: 1px solid white;
-            color: white;
-            border-radius: 5px;
+  .formHeading {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 14px;
 
-            @include mobile{
-               padding: 10px;
-              }
-        }
-        button{
-            padding: 20px;
-            border: none;
-            background-color: white;
-            cursor: pointer;
-            font-weight: 500;
-            @include mobile{
-                padding: 10px;
-                margin-top: -20px;
-              }
-                &:hover {
-    background: #014b97;
-    color: #000;
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+  p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
   }
-        }
+  }
+
+  form {
+    width: 100%;
+    max-width: 420px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+   @include mobile {
+  max-width: 340px;
+  width: 100%;
+  gap: 14px;
+}
+
+    input,
+    textarea {
+      width: 120%;
+      box-sizing: border-box;
+
+      padding: 14px 18px;
+
+      background: transparent;
+      border: 1px solid #fff;
+      border-radius: 6px;
+
+      color: #fff;
+      font-size: 15px;
+
+      &::placeholder {
+        color: rgba(255,255,255,.55);
+        text-align: left;
+      }
+      @include mobile{
+        width: 100%;
       }
     }
 
+   input {
+  height: 50px;
+  padding: 0 16px;
+  font-size: 15px;
 }
+
+    textarea {
+     height: 130px;
+  padding: 14px 16px;
+    }
+
+    button {
+      width: 120%;
+      height: 50px;
+  font-size: 16px;
+
+      border: none;
+      background: white;
+      color: black;
+
+      font-weight: 600;
+      cursor: pointer;
+
+      &:hover {
+        background: #014b97;
+        color: white;
+      }
+       @include mobile{
+        width: 100%;
+      }
+    }
+  }
+}}
    .consultation__btn {
       margin-top: 35px;
       padding: 14px 40px;
@@ -169,9 +248,13 @@ p{
 //   margin-bottom: 20px;
 // }
 .map{
+    margin-top: 0;
+
+  @include mobile {
+    margin-top: 20px;
+  }
   scroll-snap-align: center;
   scroll-snap-stop: always;
-  margin-top: -100px;
 }
 // .closeIcon {
 //   position: absolute;
