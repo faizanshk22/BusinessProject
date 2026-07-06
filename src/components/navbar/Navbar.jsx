@@ -13,6 +13,7 @@ function Navbar() {
        <span className='links'>   
 <Link to="/" className="home">Home</Link>
   <NavLink to="/about" className="aboutLink">About</NavLink>
+    <NavLink to="/about" className="aboutLink">Blogs</NavLink>
   <NavLink to="/getStarted" className="contact">Contact</NavLink>  
   <NavLink to="/engineers" className="engineer">Hire Engineers</NavLink>
 
