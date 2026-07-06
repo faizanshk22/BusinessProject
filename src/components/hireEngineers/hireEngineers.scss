@@ -142,8 +142,10 @@ position: fixed;
       }
 
       &.active {
-        background: rgb(15, 212, 146);
-        border-color: rgba(75, 80, 78, 0.698);
+  background:linear-gradient(
+      135deg,
+      rgba(75, 80, 78, 0.698),
+      aquamarine);        border-color: rgba(75, 80, 78, 0.698);
       }
 
       @include mobile {

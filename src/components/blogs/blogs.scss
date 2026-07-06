@@ -1,0 +1,400 @@
+@import "../../app.scss";
+.nv{
+  
+  @include mobile{
+    margin-top: -100px;
+position: fixed;
+  }
+}
+.mainBlogDiv{
+    width: 100%;
+.blogs {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  width: 100%;
+  min-height: 100vh;
+  background: inherit;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 120px;
+
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgba(48, 155, 255, 0.12);
+    pointer-events: none;
+  }
+
+  .one {
+    width: 650px;
+    height: 650px;
+    left: -240px;
+    top: 120px;
+  }
+
+  .two {
+     width: 650px;
+    height: 650px;
+    right: -200px;
+    bottom: 100px;
+  }
+   @include mobile{
+    margin-top: 0px;
+
+  }
+}
+
+/* =====================================================
+                        HERO
+===================================================== */
+
+.hero {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  height: 20%;
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  padding-top: 140px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  background:inherit;
+
+  @include mobile {
+    width: 92%;
+    padding-top: 110px;
+  }
+
+  .heroTag {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 40px;
+  background:linear-gradient(
+      135deg,
+      rgba(75, 80, 78, 0.698),
+      aquamarine);    border: 3px solid rgb(239, 232, 233);
+    color: white;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 28px;
+  }
+
+  h1 {
+    font-size: 74px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 28px;
+
+    span {
+      color: aquamarine;
+    }
+
+    @include mobile {
+      font-size: 42px;
+    }
+  }
+
+  p {
+    width: 760px;
+    max-width: 100%;
+    margin: auto;
+    color: #b7b7b7;
+    line-height: 1.9;
+    font-size: 22px;
+
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+}
+
+/* =====================================================
+                  BLOG CONTAINER
+===================================================== */
+
+.blogContainer {
+  width: 90%;
+  max-width: 1400px;
+  margin: 110px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+
+  @include mobile {
+    width: 92%;
+    gap: 70px;
+  }
+}
+
+/* =====================================================
+                  FEATURED BLOG
+===================================================== */
+
+.featuredBlog {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 35px;
+  }
+  
+  &.reverse {
+    flex-direction: row-reverse;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+}
+
+/* IMAGE */
+
+.imageSection {
+  flex: 1;
+
+  img {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 24px;
+    transition: .4s;
+    border: 1px solid rgba(255,255,255,.06);
+  }
+
+  img:hover {
+    transform: scale(1.02);
+  }
+
+  @include mobile {
+
+    width: 100%;
+
+    img {
+      height: 260px;
+    }
+
+  }
+}
+
+/* CONTENT */
+
+.contentSection {
+  flex: 1;
+
+  .category {
+    display: inline-block;
+    color: aquamarine;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 46px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    color: #bcbcbc;
+    line-height: 1.9;
+    margin-bottom: 35px;
+    font-size: 17px;
+  }
+}
+
+/* BLOG FOOTER */
+
+.blogFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  .meta {
+    display: flex;
+    gap: 12px;
+    color: #888;
+    font-size: 15px;
+  }
+
+  button {
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+     background:linear-gradient(
+      135deg,
+      rgba(75, 80, 78, 0.698),
+      aquamarine);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .35s;
+  }
+
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 15px 35px rgba(16, 150, 187, 0.35);
+  }
+}
+
+/* =====================================================
+                     CTA SECTION
+===================================================== */
+
+.ctaSection {
+  width: 90%;
+  max-width: 1400px;
+  margin: 140px auto 80px;
+
+  @include mobile {
+    width: 92%;
+    margin-bottom: -20px;
+  }
+}
+
+.ctaContent {
+  background: linear-gradient(
+    145deg,
+    #111,
+    #1b1b1b
+  );
+
+  border-radius: 28px;
+
+  padding: 80px;
+
+  text-align: center;
+
+  border: 1px solid rgba(255,255,255,.06);
+
+  position: relative;
+
+  overflow: hidden;
+
+  @include mobile {
+    padding: 45px 25px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,48,77,.1);
+    right: -220px;
+    top: -220px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,48,77,.08);
+    left: -120px;
+    bottom: -120px;
+  }
+
+  .smallTitle {
+    color: aquamarine;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    font-size: 58px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+
+    @include mobile {
+      font-size: 36px;
+    }
+  }
+
+  p {
+    width: 700px;
+    max-width: 100%;
+    margin: auto;
+    color: #bdbdbd;
+    line-height: 1.9;
+    font-size: 17px;
+  }
+}
+
+/* BUTTONS */
+
+.ctaButtons {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  height: 60px;
+  padding: 0 34px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  font-size: 16px;
+  font-weight: 600;
+  transition: .35s;
+}
+
+.primaryBtn {
+  color: white;
+
+  background:linear-gradient(
+      135deg,
+      rgba(75, 80, 78, 0.698),
+      aquamarine);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 15px 35px rgba(16, 150, 187, 0.35);
+  }
+}
+
+.secondaryBtn {
+  color: white;
+  background: #262626;
+  border: 1px solid rgba(255,255,255,.08);
+
+  &:hover {
+    transform: translateY(-4px);
+    background: #333;
+  }
+}
+}

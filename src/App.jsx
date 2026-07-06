@@ -23,6 +23,7 @@ import About from './pages/About/About';
 import Testimonials from './components/Testimonials/Testimonials';
 import VideoSection from "./components/VideoSection/VideoSection";
 import HireEngineers from './components/hireEngineers/HireEngineers';
+import Blogs from "./components/blogs/Blogs";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -42,6 +43,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/about" element={<About />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/engineers" element={<HireEngineers/>} />
         <Route path='/' element={
           <div>
