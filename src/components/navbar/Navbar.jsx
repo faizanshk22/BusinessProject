@@ -14,7 +14,7 @@ function Navbar() {
 <Link to="/" className="home">Home</Link>
   <NavLink to="/about" className="aboutLink">About</NavLink>
   <NavLink to="/getStarted" className="contact">Contact</NavLink>  
-  <NavLink to="/engineers" className="home">Hire Engineers</NavLink>
+  <NavLink to="/engineers" className="engineer">Hire Engineers</NavLink>
 
 
 
