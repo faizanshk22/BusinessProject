@@ -75,7 +75,7 @@ function GetStarted() {
 
           <div className="item" variants={variants}>
             <img width="30" height="30" src="email.png" alt="Email" />
-            <p>hello-hr.onsets@outlook.com</p>
+            <p>hello-hr.onsets@outlook.com <br/> hello-hr@onsets.digital</p>
           </div>
 
           <div className="item" variants={variants}>

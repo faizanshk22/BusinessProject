@@ -62,7 +62,7 @@ function Contact() {
         <h1 variants={variants}>Get in touch!</h1>
         <div className="item" variants={variants}>
         <img width="30" height="30" src="email.png" alt="Email"/>
-          <p>hello-hr.onsets@outlook.com</p>
+          <p>hello-hr.onsets@outlook.com <br/> hello-hr@onsets.digital</p>
         </div>
         <div className="item" variants={variants}>
         <img width="30" height="30" src="https://img.icons8.com/?size=100&id=bqSGWblWbynM&format=png&color=000000" alt="Location" className='item2'/>
