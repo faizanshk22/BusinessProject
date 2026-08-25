@@ -24,7 +24,7 @@ height: 100vh;
   .wrapper {
     max-width: 1336px;
     height: 60%;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-left: 150px;
     position: relative; // important
     z-index: 10; 
@@ -121,13 +121,16 @@ height: 100vh;
       }
 
       img {
+        margin-top: 20px;
+        margin-bottom: 20px;
         width: 50px;
+           @include mobile{
+      img{
+        display: none;
       }
-    //    @include mobile{
-    //   img{
-    //     display: none;
-    //   }
-    // }
+    }
+      }
+    
     }
   }
 
@@ -154,7 +157,7 @@ height: 100vh;
 .btn {
   cursor: pointer;
   padding: 12px 30px;
-  margin-top: 20px;
+  margin-top: 50px;
   font-size: 16px;
   font-weight: 600;
   border-radius: 12px;

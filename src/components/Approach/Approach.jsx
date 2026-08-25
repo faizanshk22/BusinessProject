@@ -5,7 +5,7 @@ function Approach() {
     return (
         <div className="approach">
             <h1 className="approachTitle">Our Approach</h1>
-            <div className="container">
+<div className="approach-container">
             <div className="curveLine"></div>
 
             <div className="steps">

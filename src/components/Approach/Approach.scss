@@ -19,18 +19,17 @@
   }
 
   /* RED CURVE */
-  .curveLine {
-    position: absolute;
-    top: 260px; /* Arc height EXACT like original */
-    left: 60%;
-    right: 80%;
-    width: 200%; /* Wider = smoother identical curve */
-    height: 4000px; /* Controls the rise exactly */
-    transform: translateX(-50%);
-    border-top: 2px solid #014b97;
-    border-radius: 50%;
-    z-index: 1;
-  }
+// .curveLine {
+//   position: absolute;
+//   top: 260px;
+//   left: 50%;
+//   width: 200%;
+//   height: 1000px;
+//   transform: translateX(-50%);
+//   border-top: 2px solid #014b97;
+//   border-radius: 50%;
+//   z-index: 1;
+// }
 
   .steps {
     width: 100%;
@@ -121,9 +120,9 @@
       }
     }
   }
- .container{
-    margin-top: -300px;
- }
+.approach-container {
+  width: 100%;
+}
   .approach .curveLine {
     display: none;
   }
