@@ -41,10 +41,10 @@ const FeaturedBlog = ({ blog, reverse }) => {
 
           </div>
 
-          <button>
+          {/* <button>
             Read More
             <FaArrowRight />
-          </button>
+          </button> */}
 
         </div>
 
