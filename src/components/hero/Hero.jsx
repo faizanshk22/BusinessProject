@@ -67,7 +67,7 @@ function Hero() {
             </a> */}
             {/* <motion.button variants={textVariants}>Contact Me</motion.button> */}
           </motion.div>
-          <motion.img variants={textVariants} animate='scrollButton' src="/scroll.png" alt="" className='scrollButton' />
+          {/* <motion.img variants={textVariants} animate='scrollButton' src="/scroll.png" alt="" className='scrollButton' /> */}
         </motion.div>
       <Link to="/getstarted">   <div className="btn">
  GET STARTED
